@@ -1,0 +1,42 @@
+.project {
+  background: white;
+  font-size: 0.937rem;
+  padding: 6.4em 0;
+}
+
+.project__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__img {
+
+  max-width: 540px;
+
+  & img {
+    border-radius: 8px;
+  }
+}
+
+.project__content {
+  max-width: 445px;
+  margin: 0;
+
+  & p {
+    color:#4F4F4F;
+  }
+
+  & p:nth-child(odd){
+    margin: 20px 0;
+  }
+
+}
+
+.project__title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color:#333333;
+}

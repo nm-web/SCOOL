@@ -1,0 +1,67 @@
+@import "app/css/fonts/font.css";
+
+:root{
+ font-size: 1rem;
+ box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+ max-width: 1920px;
+ margin: 0 auto;
+ height: 100%;
+ scroll-behavior: smooth;
+ text-rendering: optimizeSpeed;
+ line-height: 1.5;
+ background-color: white;
+ font-family: 'Proxima Nova','Arial',sans-serif;
+
+}
+
+a {
+ text-decoration: none;
+ color:inherit;
+}
+
+ul[class],
+ol[class] {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+
+input,
+button,
+textarea,
+select {
+ font: inherit;
+ outline: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+ margin: 0;
+}
+
+p {
+ margin: 0;
+}
+
+img {
+ max-width: 100%;
+ object-fit: cover;
+}
+
+.container {
+ max-width: 1120px;
+ padding: 0 5px;
+ margin: 0 auto;
+}
+
+@import "header";
+@import "button";
+@import "section/banner";
+@import "section/project";
