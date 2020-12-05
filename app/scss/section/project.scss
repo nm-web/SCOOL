@@ -24,7 +24,7 @@
   margin: 0;
 
   & p {
-    color:#4F4F4F;
+    color:$gray;
   }
 
   & p:nth-child(odd){
@@ -34,9 +34,7 @@
 }
 
 .project__title {
-  font-size: 3rem;
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: 16px;
-  color:#333333;
 }

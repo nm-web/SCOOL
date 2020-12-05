@@ -27,7 +27,7 @@ function clearDist() {
 }
 
 function styles() {
-  return src('app/scss/**/*.scss')
+  return src('app/scss/main.scss')
     .pipe(scss({outputStyle:'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({

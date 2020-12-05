@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo logo">
+                <img class="logo__img" src="images/content/logo.png" alt="">
+                <div class="logo__text">Реальные отзывы <br/> о школах и детских садах</div>
+            </div>
+            <div class="header__region">
+                <svg width="12" height="16" viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.666748C9.12962 0.666748 11.6667 3.20379 11.6667 6.33341C11.6667 8.32379 10.7481 10.3365 9.21252 12.3005C8.66752 12.9975 8.07479 13.6474 7.46757 14.2394C7.41754 14.2881 7.36835 14.3356 7.32004 14.3818L7.04141 14.6432L6.78707 14.8724L6.55989 15.0686L6.42115 15.1835C6.17769 15.3819 5.82877 15.3835 5.58353 15.1873L5.43847 15.0672L5.21233 14.8719L4.95845 14.6431L4.67994 14.3818L4.53242 14.2394C3.9252 13.6474 3.33247 12.9975 2.78747 12.3005C1.25186 10.3365 0.333328 8.32379 0.333328 6.33341C0.333328 3.20379 2.87037 0.666748 6 0.666748ZM6 2.00008C3.60675 2.00008 1.66666 3.94017 1.66666 6.33341C1.66666 7.97085 2.46852 9.7279 3.83784 11.4792C4.3434 12.1258 4.89642 12.7322 5.46315 13.2846L5.73163 13.5415C5.82009 13.6245 5.90867 13.7076 6 13.7874L6.26832 13.5415L6.53684 13.2846C7.10357 12.7322 7.65659 12.1258 8.16215 11.4792C9.53147 9.7279 10.3333 7.97085 10.3333 6.33341C10.3333 3.94017 8.39324 2.00008 6 2.00008ZM6 3.66675C7.47275 3.66675 8.66666 4.86066 8.66666 6.33341C8.66666 7.80617 7.47275 9.00008 6 9.00008C4.52724 9.00008 3.33333 7.80617 3.33333 6.33341C3.33333 4.86066 4.52724 3.66675 6 3.66675ZM6 5.00008C5.26362 5.00008 4.66666 5.59704 4.66666 6.33341C4.66666 7.06979 5.26362 7.66675 6 7.66675C6.73637 7.66675 7.33333 7.06979 7.33333 6.33341C7.33333 5.59704 6.73637 5.00008 6 5.00008Z"
+                          fill="#4F4F4F"/>
+                </svg>
+                <div class="header__adress">Москва</div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Школы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Сады</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">НА карте</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="btn-icon-search">
+                    <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.666687 7.00008C0.666687 3.50229 3.50223 0.666748 7.00002 0.666748C10.4978 0.666748 13.3334 3.50229 13.3334 7.00008C13.3334 8.50884 12.8058 9.89438 11.925 10.9823L14.3738 13.431C14.6341 13.6914 14.6341 14.1135 14.3738 14.3739C14.1134 14.6342 13.6913 14.6342 13.431 14.3739L10.9822 11.9251C9.89432 12.8058 8.50878 13.3334 7.00002 13.3334C3.50223 13.3334 0.666687 10.4979 0.666687 7.00008ZM7.00002 2.00008C4.23861 2.00008 2.00002 4.23867 2.00002 7.00008C2.00002 9.76149 4.23861 12.0001 7.00002 12.0001C9.76143 12.0001 12 9.76149 12 7.00008C12 4.23867 9.76143 2.00008 7.00002 2.00008Z"
+                              fill="#4F4F4F"/>
+                    </svg>
+                </button>
+                <form action="#" class="search form-header">
+                    <input type="search" placeholder="Поиск" name="s">
+                </form>
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu__line mobile-menu__line--top"></div>
+                <div class="mobile-menu__line mobile-menu__line--middle"></div>
+                <div class="mobile-menu__line mobile-menu__line--bottom"></div>
+            </div>
+            <div class="header__check">
+
+                <p>Вход / Регистрация</p>
+            </div>
+            <button class="btn btn-review">Оставить отзыв</button>
+        </div>
+    </div>
+</header>
+<div class="container wrapper">
+    <div class="content-wrap">
+        <article class="institution">
+            <div class="breadcrumbs">Главная</div>
+            <div class="institution__top">
+                <h2 class="institution__title">ГБОУ ЦРР – детский сад № 1104 «Семицветик»</h2>
+                <div class="institution__link">
+                    <div class="link-item">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 1C3.46244 1 1 3.46245 1 6.5C1 12 7.5 17 11 18.1631C14.5 17 21 12 21 6.5C21 3.46245 18.5375 1 15.5 1C13.6399 1 11.9954 1.92345 11 3.3369C10.0046 1.92345 8.36015 1 6.5 1Z"
+                                  stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="link-item">
+                        <svg width="18" height="20" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M11 3.5C11 1.567 12.567 0 14.5 0C16.433 0 18 1.567 18 3.5C18 5.43298 16.433 7 14.5 7C13.5229 7 12.6392 6.59957 12.0043 5.95384L6.87307 9.06266C6.95579 9.36099 7 9.67533 7 10C7 10.2917 6.96432 10.575 6.8971 10.8459L12.1211 13.9328C12.7455 13.3539 13.5814 13 14.5 13C16.433 13 18 14.567 18 16.5C18 18.433 16.433 20 14.5 20C12.567 20 11 18.433 11 16.5C11 16.2084 11.0357 15.9251 11.1029 15.6542L5.87889 12.5673C5.2545 13.1461 4.41857 13.5 3.5 13.5C1.56702 13.5 0 11.933 0 10C0 8.06701 1.56702 6.5 3.5 6.5C4.38448 6.5 5.19234 6.82809 5.8085 7.3692L11.0667 4.18346C11.0229 3.96241 11 3.73389 11 3.5ZM14.5 2C13.6716 2 13 2.67158 13 3.5C13 4.32841 13.6716 5 14.5 5C15.3284 5 16 4.32841 16 3.5C16 2.67158 15.3284 2 14.5 2ZM3.5 8.5C2.67158 8.5 2 9.17159 2 10C2 10.8284 2.67158 11.5 3.5 11.5C4.32841 11.5 5 10.8284 5 10C5 9.17159 4.32841 8.5 3.5 8.5ZM14.5 15C13.6716 15 13 15.6716 13 16.5C13 17.3284 13.6716 18 14.5 18C15.3284 18 16 17.3284 16 16.5C16 15.6716 15.3284 15 14.5 15Z"
+                                  fill="#828282"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="block-rating">
+                <p class="grade">4.5</p>
+                <div class="rating">
+                    <div class="rating-item  rating--full"></div>
+                    <div class="rating-item rating--full"></div>
+                    <div class="rating-item rating--full"></div>
+                    <div class="rating-item rating--full"></div>
+                    <div class="rating-item rating--full"></div>
+                </div>
+                <div class="type type--red">Государственный</div>
+            </div>
+            <div class="institution__adress">
+                <div class="adress-box">
+                    <div class="adress__item">
+                        <svg width="12" height="16" viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0.666748C9.12962 0.666748 11.6667 3.20379 11.6667 6.33341C11.6667 8.32379 10.7481 10.3365 9.21252 12.3005C8.66752 12.9975 8.07479 13.6474 7.46757 14.2394C7.41754 14.2881 7.36835 14.3356 7.32004 14.3818L7.04141 14.6432L6.78707 14.8724L6.55989 15.0686L6.42115 15.1835C6.17769 15.3819 5.82877 15.3835 5.58353 15.1873L5.43847 15.0672L5.21233 14.8719L4.95845 14.6431L4.67994 14.3818L4.53242 14.2394C3.9252 13.6474 3.33247 12.9975 2.78747 12.3005C1.25186 10.3365 0.333328 8.32379 0.333328 6.33341C0.333328 3.20379 2.87037 0.666748 6 0.666748ZM6 2.00008C3.60675 2.00008 1.66666 3.94017 1.66666 6.33341C1.66666 7.97085 2.46852 9.7279 3.83784 11.4792C4.3434 12.1258 4.89642 12.7322 5.46315 13.2846L5.73163 13.5415C5.82009 13.6245 5.90867 13.7076 6 13.7874L6.26832 13.5415L6.53684 13.2846C7.10357 12.7322 7.65659 12.1258 8.16215 11.4792C9.53147 9.7279 10.3333 7.97085 10.3333 6.33341C10.3333 3.94017 8.39324 2.00008 6 2.00008ZM6 3.66675C7.47275 3.66675 8.66666 4.86066 8.66666 6.33341C8.66666 7.80617 7.47275 9.00008 6 9.00008C4.52724 9.00008 3.33333 7.80617 3.33333 6.33341C3.33333 4.86066 4.52724 3.66675 6 3.66675ZM6 5.00008C5.26362 5.00008 4.66666 5.59704 4.66666 6.33341C4.66666 7.06979 5.26362 7.66675 6 7.66675C6.73637 7.66675 7.33333 7.06979 7.33333 6.33341C7.33333 5.59704 6.73637 5.00008 6 5.00008Z"
+                                  fill="#4F4F4F"/>
+                        </svg>
+                        <p>142770, Москва Город, Сосенское Поселение, Коммунарка Поселок</p>
+                    </div>
+
+                    <div class="adress__item">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6667 0.333252C14.7658 0.33525 14.8598 0.35336 14.9537 0.397998C15.0505 0.444295 15.1357 0.514051 15.2001 0.599919C15.2423 0.662847 15.2324 0.643963 15.2001 0.599919C15.2864 0.715053 15.3334 0.856034 15.3334 0.999919C15.3332 0.964408 15.3317 0.948996 15.3334 0.999919V10.9999C15.3334 11.3681 15.0349 11.6666 14.6667 11.6666H1.33341C0.965225 11.6666 0.666748 11.3681 0.666748 10.9999V0.999919C0.666748 0.880567 0.699126 0.762057 0.760031 0.659698C0.884143 0.450572 1.09912 0.337976 1.33341 0.333252H14.6667ZM14.0001 2.33325L8.40008 6.53325C8.18675 6.69325 7.90141 6.70925 7.67368 6.58125L7.60008 6.53325L2.00008 2.33325V10.3333H14.0001V2.33325ZM3.33341 1.66659L8.00008 5.16659L12.6667 1.66659H3.33341Z"
+                                  fill="#27AE60"/>
+                        </svg>
+                        <p>dou27@list.ru; dou1104@ou.mosuzedu.ru</p>
+                    </div>
+
+                    <div class="adress__item">
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.66549 0.895264H1.97459C0.657723 0.895264 -0.28649 2.14185 0.135008 3.39106C0.977471 5.8878 2.11037 8.09968 3.58649 9.57579C5.0626 11.0519 7.2745 12.1848 9.77126 13.0273C11.0204 13.4488 12.267 12.5046 12.267 11.1877V9.49652C12.267 9.01245 12.0047 8.56644 11.5816 8.33119L10.1085 7.51218L10.0016 7.45889C9.63959 7.2981 9.22224 7.30596 8.86424 7.48499L7.51672 8.15799L7.48474 8.14801C7.43151 8.13067 7.37168 8.10979 7.30626 8.08507C6.97123 7.95851 6.63562 7.7818 6.32481 7.54879C6.18997 7.44769 6.06251 7.33779 5.94349 7.21877C5.82299 7.09828 5.71175 6.96905 5.60945 6.83216C5.37724 6.52146 5.20064 6.18588 5.07374 5.85087L5.01054 5.67228L5.00006 5.63932L5.67351 4.29382C5.87029 3.90034 5.86025 3.43507 5.6467 3.05039L4.83123 1.58144C4.59609 1.15794 4.14984 0.895264 3.66549 0.895264ZM1.97459 2.2286H3.6655L4.48096 3.6975L3.69534 5.26878C3.62958 5.4003 3.60915 5.54987 3.63722 5.69421C3.73568 6.2004 4.00595 6.91389 4.54145 7.63038C4.68122 7.8174 4.83409 7.995 5.00069 8.16159C5.1653 8.3262 5.34058 8.47733 5.52501 8.6156C6.24303 9.15391 6.95826 9.42409 7.46588 9.52145C7.60971 9.54904 7.75861 9.5285 7.88959 9.46301L9.46058 8.67752L10.9337 9.49652V11.1877C10.9337 11.6094 10.5657 11.8881 10.1976 11.7639C7.87898 10.9816 5.8268 9.93051 4.5293 8.63299C3.23179 7.33548 2.18069 5.2833 1.39836 2.96478C1.27415 2.59664 1.55292 2.2286 1.97459 2.2286Z"
+                                  fill="#27AE60"/>
+                        </svg>
+                        <p>+7 495 817-74-14</p>
+                    </div>
+                    <div class="adress-bottom">
+                        <p><strong>Метро:</strong> Таганская, Марксисткая</p>
+                        <p><strong>Район:</strong> Таганский</p>
+                        <p><strong>Округ:</strong> ЦАО</p>
+                    </div>
+
+                </div>
+                <div class="institution__map">
+                    <img src="images/content/map.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="gallery">
+                <div class="gallery__item"><img src="images/content/insitute1.jpg" alt="Фото учреждения"></div>
+                <div class="gallery__item"><img src="images/content/institute2.jpg" alt="Фото учреждения"></div>
+                <div class="gallery__item"><img src="images/content/institute3.jpg" alt="Фото учреждения"></div>
+            </div>
+
+            <div class="institution__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, aliquet eu erat integer. Tellus
+                scelerisque turpis libero volutpat nunc, nunc etiam. Suspendisse lacinia congue dignissim blandit
+                porttitor. Bibendum et nulla risus massa aliquet blandit pulvinar egestas. Et gravida viverra leo mauris
+                at at. Proin sed odio pretium urna, odio. Ultrices suspendisse habitant massa a, arcu, ullamcorper.
+            </div>
+        </article>
+        <div class="institution__review">
+            <div class="review__title tab-title ">
+                <p data-tab-name="tab-1" class="tabs--active">Отзывы (<span>2</span>)</p>
+                <p data-tab-name="tab-2">Обсуждения (<span>38</span>)</p>
+            </div>
+            <div class="review__content tab-content tab-1">
+                <div class="review__content-item ">
+                    <div class="user">
+                        <img class="review__img" src="images/content/user.png" alt="">
+                        <p class="review__name">Роман Сергеев</p>
+                        <div class="user__comment">
+                            <div class="icon-comment"></div>
+                            <span>32</span>
+                        </div>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review__top">
+                            <div class="rating">
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--empty"></div>
+                            </div>
+                            <div class="review__date">23 января 2020 19:50</div>
+                        </div>
+                        <div class="review__text">
+                            Сад отличный! Ребенок быстро втянулся в программу, период адаптации проходил легко. Теперь
+                            дома разговариваем на двух языках!
+                        </div>
+                        <div class="user-review__link">
+                            <div class="like-wrap">
+                                <button class="like"></button>
+                                <div class="count count--green">+<span>15</span></div>
+                            </div>
+                            <div class="like-wrap">
+                                <button class="unlike"></button>
+                                <div class="count"></div>
+                            </div>
+                            <div class="link-wrap">
+                                <div class="icon-comment"></div>
+                                <button>Ответить</button>
+                            </div>
+
+                            <div class="link-wrap">
+                                <div class="icon-link"></div>
+                                <button>Поделиться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__content-item ">
+                    <div class="user">
+                        <img class="review__img" src="images/content/user1.png" alt="">
+                        <p class="review__name">Мария Антонова</p>
+                        <div class="user__comment">
+                            <div class="icon-comment"></div>
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review__top">
+                            <div class="rating">
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--empty"></div>
+                                <div class="rating-item rating--empty"></div>
+                                <div class="rating-item rating--empty"></div>
+                                <div class="rating-item rating--empty"></div>
+                            </div>
+                            <div class="review__date">1 марта 2020 12:20</div>
+                        </div>
+                        <div class="review__text">
+                            Сад отличный! Ребенок быстро втянулся в программу, период адаптации проходил легко. Теперь
+                            дома разговариваем на двух языках!
+                        </div>
+                        <div class="user-review__link">
+                            <div class="like-wrap">
+                                <button class="like"></button>
+                                <div class="count count--green">+<span>15</span></div>
+                            </div>
+                            <div class="like-wrap">
+                                <button class="unlike"></button>
+                                <div class="count"></div>
+                            </div>
+                            <div class="link-wrap">
+                                <div class="icon-comment"></div>
+                                <button>Ответить</button>
+                            </div>
+
+                            <div class="link-wrap">
+                                <div class="icon-link"></div>
+                                <button>Поделиться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__content-item your-review">
+                    <div class="user">
+                        <img class="review__img" src="images/content/user2.png" alt="">
+                        <p class="review__name">Вы</p>
+                        <div class="user__comment">
+                            <div class="icon-comment"></div>
+                            <span>115</span>
+                        </div>
+                    </div>
+                    <div class="user-review">
+                        <p class="your-review__top">
+                            Оставить свой отзыв
+                        </p>
+                        <div class="rating">
+                            <div class="rating-item rating--grey"></div>
+                            <div class="rating-item rating--grey"></div>
+                            <div class="rating-item rating--grey"></div>
+                            <div class="rating-item rating--grey"></div>
+                            <div class="rating-item rating--grey"></div>
+                        </div>
+                        <form class="review__form">
+                            <textarea name="message" id="" cols="30" rows="5"
+                                      placeholder="Расскажите нам свои впечатления об этом учреждении..."></textarea>
+                            <div class="wrap-button">
+                                <p>Отзыв должен содержать не менее 50 символов</p>
+                                <button type="submit" class="btn btn-send">Отправить</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <div class="reclama reclama--left">
+            <p>Рекламный банер</p>
+        </div>
+    </aside>
+
+</div>
+<div class="container">
+    <div class="reclama reclama--full">
+        <p>Рекламный банер</p>
+    </div>
+    <h4 class="gallery__title">Еще детские сады в районе "Таганский"</h4>
+    <div class="gallery gallery-areal">
+        <div class="gallery__item">
+            <img src="images/content/institute4.png" alt="Фото учреждения">
+            <p>Детский сад «Солнышко»</p>
+        </div>
+        <div class="gallery__item">
+            <img src="images/content/institute5.png" alt="Фото учреждения">
+            <p>Детский сад «Радуга»</p>
+        </div>
+        <div class="gallery__item">
+            <img src="images/content/institute6.png" alt="Фото учреждения">
+            <div class="overlay">
+                <p>Детский сад «Далматинец»</p>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="images/content/institute7.png" alt="Фото учреждения">
+            <p>Детский сад «Сказка»</p>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__column">
+                <img src="images/content/logo-white.png" alt="Лого">
+                <p class="logo__text">Честные отзывы <br/> о школах и детских садах</p>
+                <div class="icon-box">
+                    <a href="#" class="social-icon vk-icon"></a>
+                    <a href="#" class="social-icon f-icon"></a>
+                    <a href="#" class="social-icon class-icon"></a>
+                </div>
+                <p class="copyright">© 2020 Все права защищены.</p>
+            </div>
+            <div class="block-menu">
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">
+                        Информация
+                    </h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">О проекте</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Карта сайта</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Реклама</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Отзывы</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Школы Москвы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Детские сады Москвы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Форумы</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Родительское собрание</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Учительская</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Архив</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Галереи</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Конкурс</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__column promolab">
+                <p>Создание и продвижение портала</p>
+                <img src="images/content/promolab.png" alt="Промолаб">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+</body>
+</html>

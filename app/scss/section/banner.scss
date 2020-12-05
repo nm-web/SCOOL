@@ -16,12 +16,17 @@
 }
 
 .banner__search {
+  margin-top: 40px;
+
+}
+
+.search {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  max-width: 730px;
   height: 38px;
   font-size: 0.938rem;
-  max-width: 730px;
+
   & input[type='search'] {
     width: 365px;
     border: 1px solid #E0E0E0;
@@ -45,15 +50,11 @@
   border-radius: 4px;
   width: 201px;
   padding-left: 48px;
-  color:#4F4F4F;
+  color:$gray;
   background-image: url('../images/svg/local.svg') ;
   background-repeat: no-repeat;
   background-size: 12px 14px;
   background-position: 26px center;
 }
 
-.btn-search {
-  width: 116px;
-  padding: 0 32px;
-  line-height: 38px;
-}
+

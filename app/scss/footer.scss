@@ -1,0 +1,76 @@
+.footer {
+  background-color: #333333;
+  padding: 64px 0 68px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer .logo__text {
+  color:#F2F2F2;
+  font-size:0.563rem;
+  margin-top: 8px;
+}
+
+.copyright {
+  font-size: 0.625rem;
+
+}
+
+.icon-box {
+  margin: 14px 0 16px 0;
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-icon.vk-icon {
+  background: url('../images/svg/vk.svg') no-repeat center,#2787F5;
+}
+
+.f-icon {
+  background: url('../images/svg/f.svg') no-repeat center,#157DC3;
+
+}
+
+.class-icon {
+  background: url('../images/svg/class.svg') no-repeat center,#F7931E;
+}
+
+.block-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 2;
+  margin: 0 51px;
+}
+
+.footer__menu-title {
+  font-size: 0.938rem;
+  text-transform: uppercase;
+  color:#767676;
+}
+
+.footer__menu .menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__menu .menu__link {
+  font-size: 0.81rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.promolab {
+  font-size: 0.81rem;
+  max-width: 161px;
+}

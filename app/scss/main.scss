@@ -1,4 +1,4 @@
-@import "app/css/fonts/font.css";
+@import "../css/fonts/font.css";
 
 :root{
  font-size: 1rem;
@@ -44,6 +44,7 @@ select {
 
 h1,h2,h3,h4,h5,h6{
  margin: 0;
+
 }
 
 p {
@@ -61,7 +62,44 @@ img {
  margin: 0 auto;
 }
 
+$gray:#4F4F4F;
+$title-color:#333333;
+$blue:#2F80ED;
+$green:#27AE60;
+
+.wrapper {
+ display: flex;
+ justify-content: space-between;
+}
+
+.content-wrap {
+ max-width: 730px;
+ flex-grow: 2;
+}
+
+.sidebar{
+ max-width: 255px;
+}
+
+.title {
+ font-size: 3rem;
+ color:$title-color;
+ line-height: 1.1;
+}
+
+button {
+ border:none;
+ background: transparent;
+}
+
 @import "header";
 @import "button";
 @import "section/banner";
 @import "section/project";
+@import "section/scool";
+@import "section/blog";
+@import "section/review";
+@import "section/social";
+@import "pages/institution";
+
+@import "footer";

@@ -1,0 +1,79 @@
+.review {
+  background: #FAFBFF;
+  padding: 64px 0;
+  text-align: center;
+}
+.review__title {
+  text-align: left;
+}
+
+.review__slider {
+  padding: 24px 0 40px 0;
+  display: flex;
+}
+
+.review__slider-item {
+  width: 255px;
+  height: 333px;
+  padding: 24px 24px 29px 24px;
+  font-size: 0.81rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px rgba(126, 126, 126, 0.1);
+
+}
+
+.review__slider-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.review__img {
+  border-radius:50%;
+  width: 64px;
+  height: 64px;
+}
+
+.review__name {
+  line-height: 1.2;
+  font-size: 0.938rem;
+  margin: 8px 0;
+}
+
+.review__institution {
+  color: #828282;
+  text-align: center;
+  line-height: 1.2;
+
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.rating--full {
+  background-image: url("../images/svg/star.svg");
+}
+
+.rating--grey {
+  background-image: url("../images/svg/star.svg");
+}
+
+.rating-item {
+  width: 28px;
+  height: 20px;
+  padding: 0 4px;
+
+  background-repeat: no-repeat;
+}
+
+.review__text {
+  text-align: center;
+  color:$gray;
+  padding-bottom: 8px;
+  line-height: 1.4;
+}

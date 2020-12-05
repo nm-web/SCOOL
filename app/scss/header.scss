@@ -10,10 +10,12 @@
 
 .logo__text {
   font-size: 0.625rem;
+  line-height: 1.1;
 }
 
 .header__region {
   display: flex;
+  cursor: pointer;
 
   & svg{
     margin-right: 10px;
@@ -23,9 +25,29 @@
 .header__search {
   display: flex;
 
+  position: relative;
+
+}
+
+.form-header {
+  position: absolute;
+  //top: -5px;
+  //right: 0;
+  opacity: 0;
+  width: 1px;
+  visibility: hidden;
   & input {
-    display: none;
+    //display: none;
   }
+}
+
+.form-header.active {
+  top: 50px;
+  right: -130%;
+  opacity: 1;
+  width: 439px;
+  visibility: visible;
+
 }
 
 .header__check {
@@ -44,12 +66,42 @@
   text-transform: uppercase;
 }
 
-.menu__item + .menu__item {
+.menu__item:not(:last-child) {
   margin-right: 2em;
 }
 
-//@media screen and (max-width: 1000px) {
-//  .header {
-//    color:white;
-//  }
-//}
+.mobile-menu {
+  cursor: pointer;
+  height: 14px;
+  position: relative;
+  width: 18px;
+
+  &.is {
+    &-active {
+      .mobile-menu__line {
+        &--top {
+          top: 10px;
+          transform: rotate(45deg);
+        }
+        &--middle { opacity: 0; }
+        &--bottom {
+          top: 10px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__line {
+    background-color: #000000;
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all linear .4s;
+    width: 100%;
+    &--top { top: 0; }
+    &--middle { top: 9px; }
+    &--bottom { top: 18px; }
+  }
+}
+
