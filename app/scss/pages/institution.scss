@@ -1,5 +1,19 @@
+//стили страницы учреждения
+
 .breadcrumbs {
-  padding:40px 0 32px 0;
+  margin: 40px 0 32px 0;
+  display: flex;
+  & a {
+    font-size: 13px;
+    color:#2F80ED;
+    text-decoration: underline;
+  }
+
+  & .active {
+    color:$title-color;
+    text-decoration: none;
+  }
+
 }
 
 .reclama--left {
@@ -29,6 +43,7 @@
 
 .institution__top {
   display: flex;
+  align-items: center;
 
 }
 
@@ -49,6 +64,7 @@
 
 .block-rating {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 24px 0 32px 0;
   & .rating {
@@ -74,6 +90,7 @@
 
 .institution__adress {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   color:$title-color;
@@ -105,6 +122,8 @@
   }
 
   & p {
+    color:$gray;
+    font-size: 15px;
     margin-left: 10px;
     line-height: 1.2;
   }
@@ -157,7 +176,7 @@
   align-items: center;
   flex-direction: column;
   min-width: 120px;
-
+  margin-bottom: 30px;
 
   & .review__name{
     font-weight: 700;
@@ -167,6 +186,7 @@
   &__comment {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 13px;
     color:#828282;
   }
@@ -195,7 +215,9 @@
 }
 
 .user-review {
-  max-width: 506px;
+  flex-grow: 1;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .user-review__top {
@@ -292,10 +314,13 @@
 
 .review__form {
   display: flex;
-  width: 540px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 540px;
 
   & textarea {
-    width: 337px;
+    max-width: 337px;
     height: 90px;
     background: #FBFAFA;
     font-size: 13px;
@@ -305,8 +330,8 @@
   }
 
   & .wrap-button {
-    margin-left: 32px;
-    width: 171px;
+    margin-left: 10px;
+    max-width: 171px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -331,16 +356,22 @@
 }
 
 .gallery-areal .overlay{
+  bottom: 5px;
   position: absolute;
   background: #333333;
   opacity: 0.7;
   height: 50px;
   width: 100%;
   border-radius: 8px;
-  bottom: 30px;
-  //z-index: 10;
+  z-index: 2;
 }
 
 .overlay p{
+  position: absolute;
+  top: 14px;
+  left: 14px;
   color:white;
+  z-index: 3;
 }
+
+//end стили страницы учреждения

@@ -1,6 +1,14 @@
 .scool {
   background: #FAFBFF;
   padding: 64px 0;
+  //& .swiper-container {
+  //  overflow: visible;
+  //}
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
 }
 
 .scool__title {
@@ -22,6 +30,8 @@
   justify-content: space-between;
   height: 276px;
   width: 203px;
+  max-width: 203px;
+  //margin-right: 24px;
   background: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0px 15px 20px rgba(126, 126, 126, 0.1);
@@ -37,6 +47,7 @@
 .scool__slider {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .slider__text {

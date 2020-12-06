@@ -7,19 +7,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__content {
+  max-width: 560px;
+  padding: 10px;
 }
 
 .social__img{
   width: 445px;
-  margin-right: 151px;
-
-}
+ }
 
 .social__box-icon {
-  width: 540px;
+  max-width: 540px;
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
+  //padding: 32px 0;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -29,6 +34,8 @@
   line-height: 24px;
   text-align: center;
   border-radius: 4px;
+
+
 }
 
 .vk-icon {

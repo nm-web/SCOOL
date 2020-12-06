@@ -1,3 +1,4 @@
+//Секция главной страницы Блог
 .blog {
   background: #FFFFFF;
   padding: 96px 0 103px 0;
@@ -11,8 +12,9 @@
 
 .blog__contnent {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
 
 }
@@ -28,8 +30,8 @@
 .blog__item {
   cursor: pointer;
   width: 255px;
-
-  margin-bottom: 30px;
+  height: auto;
+  margin: 0 auto 30px;
 
 
   & a {
@@ -68,12 +70,12 @@
 
 .blog__item--big {
   width: 540px;
-  height: 432px;
-  flex-grow: 1;
-  margin-right: 30px;
+  //height: 432px;
+  //flex-grow: 1;
+  //margin-right: 30px;
 
   & img {
-    width: 100%;
+    max-width: 540px;
     height: 355px;
   }
 
@@ -86,3 +88,4 @@
 
   }
 }
+// end Секция главной страницы Блог

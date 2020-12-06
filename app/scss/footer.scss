@@ -6,6 +6,7 @@
 .footer__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   color:white;
   align-items: flex-start;
   width: 100%;
@@ -49,6 +50,16 @@
   align-items: flex-start;
   flex-grow: 2;
   margin: 0 51px;
+  & .footer__column {
+
+    flex-basis: 150px;
+    justify-items: flex-start;
+  }
+
+}
+
+.col-1 {
+  padding: 0 10px;
 }
 
 .footer__menu-title {
@@ -71,6 +82,7 @@
 }
 
 .promolab {
+  padding: 10px;
   font-size: 0.81rem;
   max-width: 161px;
 }

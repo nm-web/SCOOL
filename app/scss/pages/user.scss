@@ -1,0 +1,34 @@
+.user-date__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & .user-review {
+    max-width: 350px;
+  }
+
+  .selection__item {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+}
+
+.user .review__img {
+  margin-right: 10px;
+}
+
+.user-date__item:not(:first-child) {
+  margin-top: 64px;
+}
+
+.user-date__item:not(:last-child) {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.user-page {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & .btn-show {
+    margin-bottom: 96px;
+  }
+}

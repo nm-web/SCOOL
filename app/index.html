@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+    <link rel="stylesheet" href="owlCarosel/owl.carousel.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,10 +17,10 @@
 <header>
     <div class="container">
         <div class="header">
-            <div class="header__logo logo">
+            <a href="#" class="header__logo logo">
                 <img class="logo__img" src="images/content/logo.png" alt="">
                 <div class="logo__text">Реальные отзывы <br/> о школах и детских садах</div>
-            </div>
+            </a>
             <div class="header__region">
                 <svg width="12" height="16" viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0.666748C9.12962 0.666748 11.6667 3.20379 11.6667 6.33341C11.6667 8.32379 10.7481 10.3365 9.21252 12.3005C8.66752 12.9975 8.07479 13.6474 7.46757 14.2394C7.41754 14.2881 7.36835 14.3356 7.32004 14.3818L7.04141 14.6432L6.78707 14.8724L6.55989 15.0686L6.42115 15.1835C6.17769 15.3819 5.82877 15.3835 5.58353 15.1873L5.43847 15.0672L5.21233 14.8719L4.95845 14.6431L4.67994 14.3818L4.53242 14.2394C3.9252 13.6474 3.33247 12.9975 2.78747 12.3005C1.25186 10.3365 0.333328 8.32379 0.333328 6.33341C0.333328 3.20379 2.87037 0.666748 6 0.666748ZM6 2.00008C3.60675 2.00008 1.66666 3.94017 1.66666 6.33341C1.66666 7.97085 2.46852 9.7279 3.83784 11.4792C4.3434 12.1258 4.89642 12.7322 5.46315 13.2846L5.73163 13.5415C5.82009 13.6245 5.90867 13.7076 6 13.7874L6.26832 13.5415L6.53684 13.2846C7.10357 12.7322 7.65659 12.1258 8.16215 11.4792C9.53147 9.7279 10.3333 7.97085 10.3333 6.33341C10.3333 3.94017 8.39324 2.00008 6 2.00008ZM6 3.66675C7.47275 3.66675 8.66666 4.86066 8.66666 6.33341C8.66666 7.80617 7.47275 9.00008 6 9.00008C4.52724 9.00008 3.33333 7.80617 3.33333 6.33341C3.33333 4.86066 4.52724 3.66675 6 3.66675ZM6 5.00008C5.26362 5.00008 4.66666 5.59704 4.66666 6.33341C4.66666 7.06979 5.26362 7.66675 6 7.66675C6.73637 7.66675 7.33333 7.06979 7.33333 6.33341C7.33333 5.59704 6.73637 5.00008 6 5.00008Z"
@@ -46,8 +50,8 @@
                               fill="#4F4F4F"/>
                     </svg>
                 </button>
-                <form action="#" class="search form-header active">
-                    <input type="search" placeholder="Поиск" name="s" >
+                <form action="#" class="search form-header">
+                    <input type="search" placeholder="Поиск" name="s">
                 </form>
             </div>
             <div class="mobile-menu">
@@ -56,8 +60,8 @@
                 <div class="mobile-menu__line mobile-menu__line--bottom"></div>
             </div>
             <div class="header__check">
-
-                <p>Вход / Регистрация</p>
+                <img src="images/content/user.png" alt="">
+                <button>Вход / Регистрация</button>
             </div>
             <button class="btn btn-review">Оставить отзыв</button>
         </div>
@@ -79,9 +83,11 @@
 <section class="project">
     <div class="container">
         <div class="project__inner">
+            <h2 class="project__title--mobile title"></h2>
             <div class="project__img">
                 <img src="images/content/project.jpg" alt="фото школы">
             </div>
+
             <article class="project__content">
                 <h2 class="project__title title">О проекте</h2>
                 <p>
@@ -106,44 +112,46 @@
         <h2 class="scool__title title">Найдите вашу школу</h2>
         <p class="scool__text">Ищите школу? Мы поможем вам! Нажмите на ссылку ниже, чтобы найти школы
             с самым высоким рейтингом, найти информацию о школе, найти отзывы родителей, и многое другое.</p>
-        <div class="scool__slider slider">
-            <div class="slider__item">
-                <img class="slider__img" src="images/content/moskow.jpg" alt="Москва">
-                <div class="slider__text">
-                    <div class="slider__title">Москва</div>
-                    <a href="#" class="slider__link"></a>
+
+            <div class="scool__slider slider owl-carousel" id="carousel1">
+                <div class="slider__item  ">
+                    <img class="slider__img" src="images/content/moskow.jpg" alt="Москва">
+                    <div class="slider__text">
+                        <div class="slider__title">Москва</div>
+                        <a href="#" class="slider__link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="slider__item">
-                <img class="slider__img" src="images/content/piter.jpg" alt="Санкт-Петербург">
-                <div class="slider__text">
-                    <div class="slider__title">Cанкт-Петербург</div>
-                    <a href="#" class="slider__link"></a>
+                <div class="slider__item  ">
+                    <img class="slider__img" src="images/content/piter.jpg" alt="Санкт-Петербург">
+                    <div class="slider__text">
+                        <div class="slider__title">Cанкт-Петербург</div>
+                        <a href="#" class="slider__link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="slider__item">
-                <img class="slider__img" src="images/content/novosibirsk.jpg" alt="Новосибирск">
-                <div class="slider__text">
-                    <div class="slider__title">Новосибирск</div>
-                    <a href="#" class="slider__link"></a>
+                <div class="slider__item  ">
+                    <img class="slider__img" src="images/content/novosibirsk.jpg" alt="Новосибирск">
+                    <div class="slider__text">
+                        <div class="slider__title">Новосибирск</div>
+                        <a href="#" class="slider__link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="slider__item">
-                <img class="slider__img" src="images/content/ekaterinburg.jpg" alt="Екатеринбург">
-                <div class="slider__text">
-                    <div class="slider__title">Екатеринбург</div>
-                    <a href="#" class="slider__link"></a>
+                <div class="slider__item  ">
+                    <img class="slider__img" src="images/content/ekaterinburg.jpg" alt="Екатеринбург">
+                    <div class="slider__text">
+                        <div class="slider__title">Екатеринбург</div>
+                        <a href="#" class="slider__link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="slider__item">
-                <img class="slider__img" src="images/content/novgorod.jpg" alt="Нижний Новгород">
-                <div class="slider__text">
-                    <div class="slider__title">Нижний Новгород</div>
-                    <a href="#" class="slider__link"></a>
+                <div class="slider__item  ">
+                    <img class="slider__img" src="images/content/novgorod.jpg" alt="Нижний Новгород">
+                    <div class="slider__text">
+                        <div class="slider__title">Нижний Новгород</div>
+                        <a href="#" class="slider__link"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
 </section>
 
 <section class="blog">
@@ -159,44 +167,45 @@
                     </div>
                 </a>
             </article>
-
-            <div class="blog-container">
-                <article class="blog__item">
-                    <a href="#">
-                        <img src="images/content/blog2.jpg" alt="Ученики">
-                        <div class="blog__text">
-                            <h3>Мобильные телефоны в школе</h3>
-                            <p>Запрет на сотовые телефоны в школах: все ли «за»?</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="blog__item">
-                    <a href="#">
-                        <img src="images/content/blog3.jpg" alt="Ученики">
-                        <div class="blog__text">
-                            <h3>Как подготовиться к ЕГЭ</h3>
-                            <p>Ночной кошмар выпускников или ЕГЭ экзамены: полезные советы по...</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="blog__item">
-                    <a href="#">
-                        <img src="images/content/blog4.jpg" alt="Ученики">
-                        <div class="blog__text">
-                            <h3>Подготовка к поступлению</h3>
-                            <p>С наступлением весны ученики 11-ых классов начинают думать не только...</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="blog__item">
-                    <a href="#">
-                        <img src="images/content/blog5.jpg" alt="Ученики">
-                        <div class="blog__text">
-                            <h3>Школьник и социальные сети</h3>
-                            <p>Нам уже кажется нормой, что большинство детей школьного возраста...</p>
-                        </div>
-                    </a>
-                </article>
+            <div class="slider-blog " >
+                <div class="blog-container owl-carousel " id="carousel-blog">
+                    <article class="blog__item">
+                        <a href="#">
+                            <img src="images/content/blog2.jpg" alt="Ученики">
+                            <div class="blog__text">
+                                <h3>Мобильные телефоны в школе</h3>
+                                <p>Запрет на сотовые телефоны в школах: все ли «за»?</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="blog__item ">
+                        <a href="#">
+                            <img src="images/content/blog3.jpg" alt="Ученики">
+                            <div class="blog__text">
+                                <h3>Как подготовиться к ЕГЭ</h3>
+                                <p>Ночной кошмар выпускников или ЕГЭ экзамены: полезные советы по...</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="blog__item ">
+                        <a href="#">
+                            <img src="images/content/blog4.jpg" alt="Ученики">
+                            <div class="blog__text">
+                                <h3>Подготовка к поступлению</h3>
+                                <p>С наступлением весны ученики 11-ых классов начинают думать не только...</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="blog__item ">
+                        <a href="#">
+                            <img src="images/content/blog5.jpg" alt="Ученики">
+                            <div class="blog__text">
+                                <h3>Школьник и социальные сети</h3>
+                                <p>Нам уже кажется нормой, что большинство детей школьного возраста...</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
         </div>
         <a href="#" class="btn btn-post">Все записи</a>
@@ -208,7 +217,7 @@
         <h2 class="review__title title">
             Последние отзывы
         </h2>
-        <div class="review__slider">
+        <div class="owl-carousel review__slider " id="carousel-review">
             <div class="review__slider-item">
                 <img class="review__img" src="images/content/user.png" alt="Фото">
                 <h4 class="review__name">Роман Сергеев</h4>
@@ -271,7 +280,7 @@
             </div>
 
         </div>
-        <button class="btn btn-show">Показать ещё</button>
+        <a href="" class="btn btn-show">Показать ещё</a>
     </div>
 </section>
 
@@ -298,7 +307,9 @@
                             </svg>
                         </div>
                         <svg width="103" height="12" viewBox="0 0 103 12" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.86 5.5C33.86 8.74 31.43 11 28.08 11C24.73 11 22.3 8.74 22.3 5.5C22.3 2.26 24.73 0 28.08 0C31.43 0 33.86 2.26 33.86 5.5ZM24.89 5.5C24.89 7.47 26.19 8.8 28.08 8.8C29.97 8.8 31.27 7.47 31.27 5.5C31.27 3.52 29.97 2.25 28.08 2.25C26.19 2.25 24.89 3.53 24.89 5.5ZM7.75005 5.29C8.70005 4.85 9.31005 4.11 9.31005 2.96C9.31005 1.23 7.73004 0 5.44004 0H0.170044V11H5.67004C8.04004 11 9.69004 9.71 9.69004 7.95C9.69004 6.62 8.82005 5.63 7.75005 5.29ZM2.60004 2.01H5.43005C6.28005 2.01 6.87004 2.51 6.87004 3.21C6.87004 3.91 6.27005 4.41 5.43005 4.41H2.60004V2.01ZM5.67004 9H2.61005V6.3H5.67004C6.63004 6.3 7.26004 6.85 7.26004 7.66C7.26004 8.47 6.63004 8.99 5.67004 8.99V9ZM18.84 11H22.03L16.97 5.29L21.61 0H18.71L15.03 4.27H14.43V0H12V11H14.44V6.62H15.03L18.84 11ZM43.47 0V4.34H38.54V0H36.1V11H38.53V6.56H43.46V11H45.89V0H43.47ZM53.9 11H51.46V2.22H47.66V0H57.7V2.22H53.9V11ZM63.4 0C61.29 0 59.49 0.89 58.88 2.8L61.12 3.17C61.46 2.5 62.17 1.97 63.27 1.97C64.6 1.97 65.33 2.81 65.44 4.25H63.12C59.89 4.25 58.33 5.67 58.33 7.7C58.33 9.75 59.92 11 62.11 11C63.91 11 65.11 10.28 65.64 9.37L66.14 11H67.9V4.82C67.9 1.63 66.16 0 63.4 0ZM62.68 9C61.49 9 60.78 8.5 60.78 7.6C60.78 6.75 61.35 6.16 63.21 6.16H65.56C65.56 7.96 64.37 9 62.68 9ZM80.67 11H77.47L73.67 6.62H73.07V11H70.64V0H73.07V4.27H73.67L77.34 0H80.24L75.61 5.29L80.67 11ZM84.55 11H86.98V2.22H90.78V0H80.74V2.22H84.54L84.55 11ZM97.1001 0C100.44 0 102.66 2.4 102.66 5.37C102.66 5.67 102.64 5.92 102.62 6.16H94.08C94.3101 7.85 95.44 8.85 97.25 8.85C98.54 8.85 99.4 8.45 99.93 7.65L102.22 8.04C101.34 10.05 99.3901 11 97.1001 11C96.3687 11.0326 95.6385 10.9127 94.9559 10.6479C94.2733 10.3832 93.6533 9.97935 93.1351 9.46214C92.617 8.94492 92.212 8.3256 91.946 7.6435C91.68 6.96141 91.5588 6.23145 91.59 5.5C91.59 2.38 93.7601 0 97.1001 0ZM100.02 4.25C99.62 2.88 98.62 2.1 97.1001 2.1C95.62 2.1 94.6301 2.84 94.23 4.25H100.02Z" fill="#19191A"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M33.86 5.5C33.86 8.74 31.43 11 28.08 11C24.73 11 22.3 8.74 22.3 5.5C22.3 2.26 24.73 0 28.08 0C31.43 0 33.86 2.26 33.86 5.5ZM24.89 5.5C24.89 7.47 26.19 8.8 28.08 8.8C29.97 8.8 31.27 7.47 31.27 5.5C31.27 3.52 29.97 2.25 28.08 2.25C26.19 2.25 24.89 3.53 24.89 5.5ZM7.75005 5.29C8.70005 4.85 9.31005 4.11 9.31005 2.96C9.31005 1.23 7.73004 0 5.44004 0H0.170044V11H5.67004C8.04004 11 9.69004 9.71 9.69004 7.95C9.69004 6.62 8.82005 5.63 7.75005 5.29ZM2.60004 2.01H5.43005C6.28005 2.01 6.87004 2.51 6.87004 3.21C6.87004 3.91 6.27005 4.41 5.43005 4.41H2.60004V2.01ZM5.67004 9H2.61005V6.3H5.67004C6.63004 6.3 7.26004 6.85 7.26004 7.66C7.26004 8.47 6.63004 8.99 5.67004 8.99V9ZM18.84 11H22.03L16.97 5.29L21.61 0H18.71L15.03 4.27H14.43V0H12V11H14.44V6.62H15.03L18.84 11ZM43.47 0V4.34H38.54V0H36.1V11H38.53V6.56H43.46V11H45.89V0H43.47ZM53.9 11H51.46V2.22H47.66V0H57.7V2.22H53.9V11ZM63.4 0C61.29 0 59.49 0.89 58.88 2.8L61.12 3.17C61.46 2.5 62.17 1.97 63.27 1.97C64.6 1.97 65.33 2.81 65.44 4.25H63.12C59.89 4.25 58.33 5.67 58.33 7.7C58.33 9.75 59.92 11 62.11 11C63.91 11 65.11 10.28 65.64 9.37L66.14 11H67.9V4.82C67.9 1.63 66.16 0 63.4 0ZM62.68 9C61.49 9 60.78 8.5 60.78 7.6C60.78 6.75 61.35 6.16 63.21 6.16H65.56C65.56 7.96 64.37 9 62.68 9ZM80.67 11H77.47L73.67 6.62H73.07V11H70.64V0H73.07V4.27H73.67L77.34 0H80.24L75.61 5.29L80.67 11ZM84.55 11H86.98V2.22H90.78V0H80.74V2.22H84.54L84.55 11ZM97.1001 0C100.44 0 102.66 2.4 102.66 5.37C102.66 5.67 102.64 5.92 102.62 6.16H94.08C94.3101 7.85 95.44 8.85 97.25 8.85C98.54 8.85 99.4 8.45 99.93 7.65L102.22 8.04C101.34 10.05 99.3901 11 97.1001 11C96.3687 11.0326 95.6385 10.9127 94.9559 10.6479C94.2733 10.3832 93.6533 9.97935 93.1351 9.46214C92.617 8.94492 92.212 8.3256 91.946 7.6435C91.68 6.96141 91.5588 6.23145 91.59 5.5C91.59 2.38 93.7601 0 97.1001 0ZM100.02 4.25C99.62 2.88 98.62 2.1 97.1001 2.1C95.62 2.1 94.6301 2.84 94.23 4.25H100.02Z"
+                                  fill="#19191A"/>
                         </svg>
                     </a>
                 </div>
@@ -310,9 +321,11 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-            <div class="footer__column">
-                <img src="images/content/logo-white.png" alt="Лого">
-                <p class="logo__text">Честные отзывы <br/> о школах и детских садах</p>
+            <div class="footer__column col-1">
+                <div>
+                    <img src="images/content/logo-white.png" alt="Лого">
+                    <p class="logo__text">Честные отзывы <br/> о школах и детских садах</p>
+                </div>
                 <div class="icon-box">
                     <a href="#" class="social-icon vk-icon"></a>
                     <a href="#" class="social-icon f-icon"></a>
@@ -389,6 +402,13 @@
         </div>
     </div>
 </footer>
+<!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script src="owlCarosel/owl.carousel.min.js"></script>
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
 <script src="js/main.min.js"></script>
 </body>
 </html>

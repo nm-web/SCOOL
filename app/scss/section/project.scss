@@ -22,6 +22,8 @@
 .project__content {
   max-width: 445px;
   margin: 0;
+  padding: 10px;
+
 
   & p {
     color:$gray;
@@ -37,4 +39,11 @@
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: 16px;
+}
+
+.project__title--mobile {
+  display: none;
+  margin-bottom: 16px;
+  width: 100%;
+
 }

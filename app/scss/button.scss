@@ -18,12 +18,15 @@
   width: 145px;
   padding: 10px 5px;
   font-size: 0.812rem;
+  justify-content: center;
 }
 
 .btn-search {
   width: 116px;
+  height: 38px;
   padding: 0 32px;
   line-height: 38px;
+  margin-top: 10px;
 }
 
 .btn-post {
@@ -46,12 +49,15 @@
 }
 
 .btn-social {
-  max-width: 160px;
+  width: 160px;
+  height: 54px;
+  text-align: center;
   background: #FFFFFF;
   box-shadow: 0 5px 20px rgba(126, 126, 126, 0.25);
   border-radius: 8px;
   transition: background-color 0.6s ease,
               background-image 0.4s ease;
+  margin: 32px 0;
 }
 
 .btn-facebook {
@@ -98,4 +104,27 @@
   font-size: 15px;
   //margin-top: 16px;
   padding: 12px 47px;
+}
+
+.btn--white {
+  background: #ffffff;
+  color:$gray;
+  font-size: 15px;
+  line-height: 1.2;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+}
+
+.btn-map {
+  height: 42px;
+  line-height: 42px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-left: 48px;
+  padding-right: 24px;
+  background:url('../images/svg/local-red.svg') no-repeat 27px center,  #ffffff;
+  cursor: pointer;
 }

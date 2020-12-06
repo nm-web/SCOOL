@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="owlCarosel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="header__logo logo">
+                <img class="logo__img" src="images/content/logo.png" alt="">
+                <div class="logo__text">Реальные отзывы <br/> о школах и детских садах</div>
+            </a>
+            <div class="header__region">
+                <svg width="12" height="16" viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.666748C9.12962 0.666748 11.6667 3.20379 11.6667 6.33341C11.6667 8.32379 10.7481 10.3365 9.21252 12.3005C8.66752 12.9975 8.07479 13.6474 7.46757 14.2394C7.41754 14.2881 7.36835 14.3356 7.32004 14.3818L7.04141 14.6432L6.78707 14.8724L6.55989 15.0686L6.42115 15.1835C6.17769 15.3819 5.82877 15.3835 5.58353 15.1873L5.43847 15.0672L5.21233 14.8719L4.95845 14.6431L4.67994 14.3818L4.53242 14.2394C3.9252 13.6474 3.33247 12.9975 2.78747 12.3005C1.25186 10.3365 0.333328 8.32379 0.333328 6.33341C0.333328 3.20379 2.87037 0.666748 6 0.666748ZM6 2.00008C3.60675 2.00008 1.66666 3.94017 1.66666 6.33341C1.66666 7.97085 2.46852 9.7279 3.83784 11.4792C4.3434 12.1258 4.89642 12.7322 5.46315 13.2846L5.73163 13.5415C5.82009 13.6245 5.90867 13.7076 6 13.7874L6.26832 13.5415L6.53684 13.2846C7.10357 12.7322 7.65659 12.1258 8.16215 11.4792C9.53147 9.7279 10.3333 7.97085 10.3333 6.33341C10.3333 3.94017 8.39324 2.00008 6 2.00008ZM6 3.66675C7.47275 3.66675 8.66666 4.86066 8.66666 6.33341C8.66666 7.80617 7.47275 9.00008 6 9.00008C4.52724 9.00008 3.33333 7.80617 3.33333 6.33341C3.33333 4.86066 4.52724 3.66675 6 3.66675ZM6 5.00008C5.26362 5.00008 4.66666 5.59704 4.66666 6.33341C4.66666 7.06979 5.26362 7.66675 6 7.66675C6.73637 7.66675 7.33333 7.06979 7.33333 6.33341C7.33333 5.59704 6.73637 5.00008 6 5.00008Z"
+                          fill="#4F4F4F"/>
+                </svg>
+                <div class="header__adress">Москва</div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Школы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Сады</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">НА карте</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="btn-icon-search">
+                    <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.666687 7.00008C0.666687 3.50229 3.50223 0.666748 7.00002 0.666748C10.4978 0.666748 13.3334 3.50229 13.3334 7.00008C13.3334 8.50884 12.8058 9.89438 11.925 10.9823L14.3738 13.431C14.6341 13.6914 14.6341 14.1135 14.3738 14.3739C14.1134 14.6342 13.6913 14.6342 13.431 14.3739L10.9822 11.9251C9.89432 12.8058 8.50878 13.3334 7.00002 13.3334C3.50223 13.3334 0.666687 10.4979 0.666687 7.00008ZM7.00002 2.00008C4.23861 2.00008 2.00002 4.23867 2.00002 7.00008C2.00002 9.76149 4.23861 12.0001 7.00002 12.0001C9.76143 12.0001 12 9.76149 12 7.00008C12 4.23867 9.76143 2.00008 7.00002 2.00008Z"
+                              fill="#4F4F4F"/>
+                    </svg>
+                </button>
+                <form action="#" class="search form-header">
+                    <input type="search" placeholder="Поиск" name="s">
+                </form>
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu__line mobile-menu__line--top"></div>
+                <div class="mobile-menu__line mobile-menu__line--middle"></div>
+                <div class="mobile-menu__line mobile-menu__line--bottom"></div>
+            </div>
+            <div class="header__check">
+                <img src="images/content/user.png" alt="">
+                <button>Вход / Регистрация</button>
+            </div>
+            <button class="btn btn-review">Оставить отзыв</button>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <ul class="breadcrumbs">
+        <li><a href="">Главная /</a></li>
+        <li><a href="">Пользователи /</a></li>
+        <li><a href="" class="active">Роман Сергеев</a></li>
+    </ul>
+    <div class="wrapper user-page">
+        <div class="user">
+            <img class="review__img" src="images/content/user.png" alt="">
+            <div><p class="review__name">Роман Сергеев</p>
+                <div class="user__comment">
+                    <div class="icon-comment"></div>
+                    <span>115</span>
+                </div>
+            </div>
+        </div>
+        <div class="user-date">
+            <div class="user-date__item">
+                <div class="user-review">
+                    <div class="user-review__top">
+                        <div class="rating">
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--empty"></div>
+                        </div>
+                        <div class="review__date">23 января 2020 19:50</div>
+                    </div>
+                    <div class="review__text">
+                        Сад отличный! Ребенок быстро втянулся в программу, период адаптации проходил легко. Теперь
+                        дома разговариваем на двух языках!
+                    </div>
+
+                </div>
+                <div class="selection__item">
+                    <a href=""><img src="images/content/institute4.png" alt="фото учреждения"></a>
+                    <div class="selections__content">
+                        <div class="selection__title"><a href="">ГБОУ ЦРР – детский сад № 1104 «Семицветик»</a></div>
+                        <div class="block-rating">
+                            <p class="grade">4.5</p>
+                            <div class="rating">
+                                <div class="rating-item  rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                            </div>
+                        </div>
+                        <div class="type type--red">Государственный</div>
+                        <div class="adress__item">
+                            <p>142770, Москва Город, Сосенское Поселение, Коммунарка Поселок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-date__item">
+                <div class="user-review">
+                    <div class="user-review__top">
+                        <div class="rating">
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--empty"></div>
+                        </div>
+                        <div class="review__date">23 января 2020 19:50</div>
+                    </div>
+                    <div class="review__text">
+                        Сад отличный! Ребенок быстро втянулся в программу, период адаптации проходил легко. Теперь
+                        дома разговариваем на двух языках!
+                    </div>
+
+                </div>
+                <div class="selection__item">
+                    <a href=""><img src="images/content/institute4.png" alt="фото учреждения"></a>
+                    <div class="selections__content">
+                        <div class="selection__title"><a href="">ГБОУ ЦРР – детский сад № 1104 «Семицветик»</a></div>
+                        <div class="block-rating">
+                            <p class="grade">4.5</p>
+                            <div class="rating">
+                                <div class="rating-item  rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                            </div>
+                        </div>
+                        <div class="type type--red">Государственный</div>
+                        <div class="adress__item">
+                            <p>142770, Москва Город, Сосенское Поселение, Коммунарка Поселок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-date__item">
+                <div class="user-review">
+                    <div class="user-review__top">
+                        <div class="rating">
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--full"></div>
+                            <div class="rating-item rating--empty"></div>
+                        </div>
+                        <div class="review__date">23 января 2020 19:50</div>
+                    </div>
+                    <div class="review__text">
+                        Сад отличный! Ребенок быстро втянулся в программу, период адаптации проходил легко. Теперь
+                        дома разговариваем на двух языках!
+                    </div>
+
+                </div>
+                <div class="selection__item">
+                    <a href=""><img src="images/content/institute4.png" alt="фото учреждения"></a>
+                    <div class="selections__content">
+                        <div class="selection__title"><a href="">ГБОУ ЦРР – детский сад № 1104 «Семицветик»</a></div>
+                        <div class="block-rating">
+                            <p class="grade">4.5</p>
+                            <div class="rating">
+                                <div class="rating-item  rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                                <div class="rating-item rating--full"></div>
+                            </div>
+                        </div>
+                        <div class="type type--red">Государственный</div>
+                        <div class="adress__item">
+                            <p>142770, Москва Город, Сосенское Поселение, Коммунарка Поселок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn btn-show">Показать ещё</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__column col-1">
+                <div>
+                    <img src="images/content/logo-white.png" alt="Лого">
+                    <p class="logo__text">Честные отзывы <br/> о школах и детских садах</p>
+                </div>
+                <div class="icon-box">
+                    <a href="#" class="social-icon vk-icon"></a>
+                    <a href="#" class="social-icon f-icon"></a>
+                    <a href="#" class="social-icon class-icon"></a>
+                </div>
+                <p class="copyright">© 2020 Все права защищены.</p>
+            </div>
+            <div class="block-menu">
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">
+                        Информация
+                    </h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">О проекте</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Карта сайта</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Реклама</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Отзывы</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Школы Москвы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Детские сады Москвы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Форумы</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Родительское собрание</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Учительская</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__menu-title">Архив</h5>
+                    <nav class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Галереи</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Конкурс</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__column promolab">
+                <p>Создание и продвижение портала</p>
+                <img src="images/content/promolab.png" alt="Промолаб">
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script src="owlCarosel/owl.carousel.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+//стили страницы Учреждения
+
+.selections-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ gap: 10px;
+  & .select {
+    //min-width: 166px;
+    //font-size: 15px;
+    //height: 42px;
+    //border: 1px solid #BDBDBD;
+    padding: 0 24px;
+  }
+  & .select:last-child {
+    flex-grow: 1;
+  }
+}
+.select {
+  min-width: 166px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #BDBDBD;
+  font-weight: 600;
+  appearance: none;
+  height: 42px;
+
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 4px;
+    top: 18px;
+    right: 10px;
+    background: url('../images/svg/arrow-down.svg');
+    //pointer-events: none;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  &.is-open {
+    .select__body { display: block; }
+  }
+  &__header {
+    cursor: pointer;
+    padding-left: 24px;
+  }
+  &__body {
+    display: none;
+    left: 0;
+    position: absolute;
+    top:calc(100% + 10px);
+    right: 0;
+    background: white;
+    z-index: 2;
+  }
+  &__item {
+    cursor: pointer;
+    padding-left: 5px;
+    margin-bottom: 10px;
+
+  }
+}
+
+.map-block {
+  position: relative;
+  height: 96px;
+  margin-top: 16px;
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.selections__title {
+  margin: 32px 0 24px 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.selection__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 64px;
+  & img {
+    max-width: 255px;
+    border-radius: 8px;
+  }
+  & .block-rating {
+    margin: 0;
+  }
+  & .type {
+    margin-left: 0;
+  }
+
+  & .adress__item p {
+    margin-top: 16px;
+    margin-left: 0;
+    white-space: pre-wrap;
+  }
+}
+
+.selection__title {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.selections__content {
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+.pagination-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 96px;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+
+}
+
+.link-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #F2F2F2;
+  color:#828282;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.link--prev {
+  background: url("../images/svg/arrow-down.svg") no-repeat center;
+  background-color: #F2F2F2;
+  background-size: 9px 6px;
+  transform: rotate(90deg);
+}
+
+.link--next {
+  background: url("../images/svg/arrow-down.svg") no-repeat center;
+  background-color: #F2F2F2;
+  background-size: 9px 6px;
+  transform: rotate(-90deg);
+}
+
+.link-page.active,
+.link-page:hover{
+  background-color: #27AE60;
+  color:white;
+}
+//end стили страницы Учреждения
