@@ -3,6 +3,7 @@
 .breadcrumbs {
   margin: 40px 0 22px 0;
   display: flex;
+  flex-wrap: wrap;
   & a {
     font-size: 13px;
     color:#2F80ED;
@@ -95,15 +96,17 @@
   align-items: stretch;
   color:$title-color;
   font-size: 15px;
+  width: 100%;
 }
 
 .institution__map img{
   border-radius: 8px;
-  max-width: 350px;
+  flex-basis: 50%;
 }
 
 .adress-box {
-  max-width: 350px;
+  flex-basis: 350px;
+
 }
 
 .adress__item {
@@ -142,15 +145,15 @@
 
 .gallery__item img {
   border-radius: 8px;
-  width: 228px;
+  max-width: 228px;
   height: 154px;
 }
 
-.gallery-item {
+.gallery .gallery-end:last-child{
   position: relative;
 }
 
-.gallery .owl-stage .owl-item:last-child:before {
+.gallery .gallery-end:last-child:before {
   position: absolute;
   content: '';
   top: 0;
@@ -231,6 +234,7 @@
 
 .review__content-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 56px 0 26px 0;
   border-bottom: 1px solid #E0E0E0;
@@ -253,6 +257,7 @@
 
 .user-review {
   flex-grow: 1;
+  max-width: 506px;
   margin-left: 10px;
   padding-left: 10px;
 }
@@ -393,11 +398,12 @@
 }
 
 .gallery-areal .overlay{
-  bottom: 5px;
+  bottom: 0;
   position: absolute;
   background: #333333;
   opacity: 0.7;
   height: 50px;
+  max-width: 228px;
   width: 100%;
   border-radius: 8px;
   z-index: 2;

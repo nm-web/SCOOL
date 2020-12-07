@@ -83,6 +83,7 @@ $green:#27AE60;
 .content-wrap {
  max-width: 730px;
  flex-grow: 2;
+ width: 100%;
 }
 
 .selections-wrap {
@@ -93,6 +94,7 @@ $green:#27AE60;
 .sidebar{
  max-width: 265px;
  padding: 0 5px;
+ margin-top:70px;
 }
 
 .title {
@@ -128,6 +130,7 @@ button {
 @import "pages/blog";
 @import "pages/post";
 @import "modal";
+@import "pages/map";
 
 @import "footer";
 
@@ -286,12 +289,40 @@ button {
   display: none;
  }
 
+ .review__content-item{
+ justify-content: center;
+
+ & .user {
+  flex-direction: row;
+
+ } }
+
+ .review__form {
+  justify-content: center;
+  & textarea,
+  & .wrap-button {
+   max-width: 100%;
+   & button {
+    margin-top: 24px;
+   }
+  }
+ }
+
+ .your-review__top {
+  text-align: center;
+ }
+
+ .user-review .rating {
+  justify-content: center;
+ }
  .user-date__item {
   .selection__item {
    flex-wrap: wrap;
    justify-content: center;
   }
  }
+
+
 
  .user-date__item:not(:first-child) {
   margin-top: 32px;
@@ -383,5 +414,9 @@ button {
    order:2;
   }
 
+ }
+
+ .institution__title {
+  font-size: 18px;
  }
 }
