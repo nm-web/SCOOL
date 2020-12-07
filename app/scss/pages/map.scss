@@ -1,3 +1,57 @@
 .map {
   margin-top: 70px;
+
+  & .map-block {
+   max-width: 1110px;
+   height: 482px;
+    position: relative;
+  }
+}
+
+.map__popup {
+  max-width: 514px;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  z-index: 10;
+  background: #ffffff;
+}
+
+.map__img {
+  padding: 16px;
+}
+
+.map__text {
+  padding: 16px;
+  font-size: 13px;
+  & .selection__title {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  & .block-rating {
+    margin: 16px 0 0;
+
+    & .rating {
+      padding: 0;
+    }
+    & .grade {
+      font-size: 19px;
+    }
+    & .rating-item {
+      width: 20px;
+    }
+  }
+
+  & .adress__item {
+    margin-bottom: 0;
+  }
+
+  & .adress__item p {
+    font-size: 13px;
+    margin-left: 0;
+    margin-top: 16px;
+  }
 }

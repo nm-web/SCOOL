@@ -62,6 +62,9 @@ $(document).ready(function () {
 
   function moveTitle() {
     let title = document.querySelector('.project__title');
+    if (!title) {
+      return;
+    }
     let titleText = title.innerHTML;
     let titleNew = document.querySelector('.project__title--mobile');
     titleNew.innerHTML = titleText;
@@ -168,20 +171,38 @@ $(document).ready(function () {
     }
   });
 
-  $('#carousel-review').owlCarousel({
-    items: 4,
-    margin: 30,
+  $('#gallery-carousel').owlCarousel({
+    items: 1,
+    margin:20,
+    nav : true,
+    center: true,
+    onInitialized: counter,
+    onChanged: counter,
+  });
+
+  function counter(event) {
+    if (!event.namespace) {
+      return;
+    }
+    var slides = event.relatedTarget;
+    $('.slider-counter').text(slides.relative(slides.current()) + 1 + ' / ' + slides.items().length);
+  }
+
+
+  $('#carousel1').owlCarousel({
+    items: 5,
+    margin: 24,
     responsive: {
       0: {
         items: 1,
-        stagePadding: 70,
-        center: true
+        margin: 24,
+        stagePadding: 50
       },
       440: {
         items: 2,
-        margin: 10,
+        // center:true,
       },
-      768: {
+      648: {
         items: 3,
       },
 
@@ -189,9 +210,11 @@ $(document).ready(function () {
         items: 4,
       },
 
+      1110: {
+        items: 5,
+      }
     }
   });
-
 
   blogSlider();
   moveTitle();

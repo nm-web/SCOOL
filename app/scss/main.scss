@@ -73,7 +73,7 @@ $title-color:#333333;
 $blue:#2F80ED;
 $green:#27AE60;
 
-.wrapper {
+.wrapper,.user-wrap {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
@@ -131,6 +131,7 @@ button {
 @import "pages/post";
 @import "modal";
 @import "pages/map";
+@import "pages/gallerry-page";
 
 @import "footer";
 
@@ -143,8 +144,8 @@ button {
  }
 
 
- .blog-page .content-wrap,.post  {
-  margin: 0 auto;
+ .blog-page .content-wrap  {
+  margin: 0 auto 0;
  }
 }
 
@@ -221,6 +222,7 @@ button {
 
   &__item:not(:last-child) {
    margin-right: 0;
+   margin-bottom: 16px;
   }
   &__list {
    display: flex;
