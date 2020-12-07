@@ -1,0 +1,220 @@
+//стили модальных окон
+.modal-enter {
+  margin-top: 50px;
+  max-width: 920px;
+  background: #fff;
+  box-shadow: 0 15px 20px rgba(126, 126, 126, 0.1);
+  border-radius: 8px;
+
+}
+
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 48px;
+  display: flex;
+  line-height: 1.2;
+  flex-direction: column;
+  align-items: center;
+
+  & #close {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: -24px;
+    top: -24px;
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.modal-enter__title {
+  font-size: 48px;
+  font-weight: 700;
+  color:$title-color;
+}
+
+.modal-enter__text {
+  font-size: 15px;
+  font-weight: 600;
+  color:$title-color;
+  margin-top: 8px;
+  max-width: 415px;
+  text-align: center;
+}
+
+.modal-inner {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-enter__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  flex-grow: 1;
+    .btn-social {
+    margin:8px 0;
+  }
+  .btn-class{
+    background: url('../images/svg/class-white.svg') no-repeat center,#ED812B ;
+  }
+  .btn-class:hover {
+    background: url('../images/svg/class-orange.svg') no-repeat center;
+  }
+
+  .btn-vk {
+    background-color: #2787F5;
+    & .vk-icon {
+      background-color: #4199FF;
+    }
+    & svg path {
+      fill:white;
+    }
+  }
+  .btn-vk:hover{
+    background-color: #ffffff;
+
+    & .icon-text path {
+      fill:#2787F5;
+    }
+  }
+
+  .btn-facebook {
+    background: #2787F5;
+    & svg path{
+      fill:white;
+    }
+  }
+
+  .btn-facebook:hover {
+    background: #ffffff;
+    & svg path{
+      fill:#1877F2;
+    }
+  }
+
+}
+.modal-enter__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & p {
+    margin-top: 8px;
+    font-size: 13px;
+    color:$gray;
+    font-weight: 600;
+  }
+  & input {
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    padding: 0 24px;
+    font-size: 13px;
+    margin-top: 16px;
+  }
+
+  & button {
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .modal-wrap #close {
+    top: 4px;
+    right: 4px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .modal-wrap {
+    padding: 24px 12px;
+  }
+
+  .modal-inner {
+    justify-content: center;
+  }
+  .modal-enter__buttons {
+    align-items: center;
+    order:2;
+    flex-grow: 2;
+    & .btn-social {
+      width: 290px;
+    }
+    & .btn-vk {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .modal-enter__text {
+    font-size: 13px;
+  }
+
+  .modal-enter__form {
+    max-width: 290px;
+  }
+  .modal-enter__buttons {
+    padding: 0;
+  }
+}
+
+.modal-region {
+  margin-top: 16px;
+  max-width: 224px;
+  padding: 12px 10px 22px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 15px 20px rgba(126, 126, 126, 0.1);
+  position: relative;
+  text-align: center;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 14px;
+    top: -26px;
+    left: 31px;
+    border: 14px solid transparent;
+    border-bottom: 14px solid white;
+    z-index: 0;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.5;
+    color:#BDBDBD;
+  }
+
+  &__title{
+    font-size: 17px;
+    color:$title-color;
+    font-weight: 600;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    & .btn {
+      width: 49px;
+      height: 32px;
+    }
+
+    & .btn:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+//end стили модальных окон

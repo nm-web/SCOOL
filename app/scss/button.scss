@@ -27,6 +27,7 @@
   padding: 0 32px;
   line-height: 38px;
   margin-top: 10px;
+  font-weight: 700;
 }
 
 .btn-post {
@@ -56,7 +57,7 @@
   box-shadow: 0 5px 20px rgba(126, 126, 126, 0.25);
   border-radius: 8px;
   transition: background-color 0.6s ease,
-              background-image 0.4s ease;
+              background-image 0.8s ease;
   margin: 32px 0;
 }
 
@@ -86,7 +87,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 12px;
-  width: 160px;
+  //width: 160px;
 }
 
 .btn-vk:hover{
@@ -127,4 +128,40 @@
   padding-right: 24px;
   background:url('../images/svg/local-red.svg') no-repeat 27px center,  #ffffff;
   cursor: pointer;
+}
+
+.link-back {
+  color:$blue;
+  position: relative;
+  display: none;
+  margin-left: 15px;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.link-back:before {
+  position: absolute;
+  content: '';
+  background: url("../images/svg/arrow-blue.svg") no-repeat center;
+  width: 10px;
+  height: 7px;
+  top: 3px;
+  left: -13px;
+}
+
+.link--blue {
+  color:$blue;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal-link {
+  margin: 8px 0;
+  text-align: right;
+}
+
+.btn--grey {
+  background: #E0E0E0;
+  color:$title-color;
 }

@@ -1,7 +1,7 @@
 //стили страницы учреждения
 
 .breadcrumbs {
-  margin: 40px 0 32px 0;
+  margin: 40px 0 22px 0;
   display: flex;
   & a {
     font-size: 13px;
@@ -146,21 +146,46 @@
   height: 154px;
 }
 
-//.gallery__item:last-child {
-//  position: relative;
-//}
-//
-//.gallery__item:before:last-child {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  width: 228px;
-//  height: 154px;
-//  background: #333333;
-//  opacity: 1;
-//
-//  z-index: 10;
-//}
+.gallery-item {
+  position: relative;
+}
+
+.gallery .owl-stage .owl-item:last-child:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 228px;
+  height: 154px;
+  background: #333333;
+  opacity: 0.4;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.link-gallery {
+  font-size: 13px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+  color:white;
+
+
+  &:before {
+    position: absolute;
+    content: '';
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../images/svg/camera.svg");
+    width: 14px;
+    height: 14px;
+  }
+}
 
 .institution__review {
   margin-top: 96px;
@@ -169,6 +194,18 @@
 .review__title {
   display: flex;
   font-size: 17px;
+  color:#BDBDBD;
+
+  & p:not(:first-child) {
+    margin-left: 40px;
+  }
+
+
+}
+
+.review__title .tabs--active {
+  color:$title-color;
+  font-weight: 600;
 }
 
 .user {

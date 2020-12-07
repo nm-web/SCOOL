@@ -36,7 +36,7 @@
     width: 7px;
     height: 4px;
     top: 18px;
-    right: 10px;
+    right: 18px;
     background: url('../images/svg/arrow-down.svg');
     //pointer-events: none;
     cursor: pointer;
@@ -48,7 +48,7 @@
   }
   &__header {
     cursor: pointer;
-    padding-left: 24px;
+    //padding-left: 24px;
   }
   &__body {
     display: none;
