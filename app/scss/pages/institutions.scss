@@ -6,10 +6,7 @@
   justify-content: space-between;
  gap: 10px;
   & .select {
-    //min-width: 166px;
-    //font-size: 15px;
-    //height: 42px;
-    //border: 1px solid #BDBDBD;
+
     padding: 0 24px;
   }
   & .select:last-child {
@@ -33,11 +30,12 @@
   &:after {
     position: absolute;
     content: '';
-    width: 7px;
+    width: 8px;
     height: 4px;
     top: 18px;
     right: 18px;
-    background: url('../images/svg/arrow-down.svg');
+    background: url('../images/svg/arrow-down.svg') no-repeat center;
+    background-size: cover;
     //pointer-events: none;
     cursor: pointer;
     z-index: 0;

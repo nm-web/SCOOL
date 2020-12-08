@@ -8,14 +8,14 @@
 
 
 .blogs {
-  margin-top: 24px;
+  margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 
   &__item {
-    max-width: 228px;
+    max-width: 243px;
+    padding: 7px;
 
   }
 

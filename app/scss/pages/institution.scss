@@ -4,14 +4,15 @@
   margin: 40px 0 22px 0;
   display: flex;
   flex-wrap: wrap;
+
   & a {
     font-size: 13px;
-    color:#2F80ED;
+    color: #2F80ED;
     text-decoration: underline;
   }
 
   & .active {
-    color:$title-color;
+    color: $title-color;
     text-decoration: none;
   }
 
@@ -20,6 +21,7 @@
 .reclama--left {
   width: 255px;
   height: 472px;
+  margin-bottom: 20px;
 }
 
 .reclama {
@@ -59,8 +61,9 @@
 .institution__title {
   flex-grow: 2;
   font-size: 1.5rem;
-  color:$title-color;
+  color: $title-color;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .block-rating {
@@ -68,6 +71,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 24px 0 32px 0;
+
   & .rating {
     margin-left: 10px;
   }
@@ -76,7 +80,7 @@
 .grade {
   font-size: 24px;
   line-height: 1.2;
-  color:$title-color;
+  color: $title-color;
   font-weight: bold;
 }
 
@@ -85,8 +89,8 @@
   margin-left: 64px;
 }
 
-.type--red{
-  color:#FF2C2C;
+.type--red {
+  color: #FF2C2C;
 }
 
 .institution__adress {
@@ -94,12 +98,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  color:$title-color;
+  color: $title-color;
   font-size: 15px;
   width: 100%;
 }
 
-.institution__map img{
+
+
+.institution__map img {
   border-radius: 8px;
   flex-basis: 50%;
 }
@@ -115,17 +121,17 @@
   width: 100%;
   margin-bottom: 16px;
 
- & svg {
-   width: 16px;
-   height: auto;
- }
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
 
   & svg path {
-    fill:#27AE60;
+    fill: #27AE60;
   }
 
   & p {
-    color:$gray;
+    color: $gray;
     font-size: 15px;
     margin-left: 10px;
     line-height: 1.2;
@@ -140,7 +146,15 @@
 .gallery {
   display: flex;
   justify-content: space-between;
-  margin: 24px 0;
+  margin: 24px 0 0;
+}
+
+#gallery .owl-stage-outer {
+  padding-bottom: 0;
+}
+
+.gallery__item {
+  max-width: 228px;
 }
 
 .gallery__item img {
@@ -149,7 +163,7 @@
   height: 154px;
 }
 
-.gallery .gallery-end:last-child{
+.gallery .gallery-end:last-child {
   position: relative;
 }
 
@@ -173,18 +187,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 3;
-  color:white;
+  color: white;
 
 
   &:before {
     position: absolute;
     content: '';
-    top:-20px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../images/svg/camera.svg");
+    background: url("../images/svg/camera.svg") no-repeat;
+    background-size: 14px 14px;
     width: 14px;
     height: 14px;
   }
@@ -196,8 +211,7 @@
 
 .review__title {
   display: flex;
-  font-size: 17px;
-  color:#BDBDBD;
+
 
   & p:not(:first-child) {
     margin-left: 40px;
@@ -206,8 +220,14 @@
 
 }
 
-.review__title .tabs--active {
-  color:$title-color;
+.tabs-title {
+  font-size: 17px;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+
+.tabs-title.tabs--active {
+  color: $title-color;
   font-weight: 600;
 }
 
@@ -218,7 +238,7 @@
   min-width: 120px;
   margin-bottom: 30px;
 
-  & .review__name{
+  & .review__name {
     font-weight: 700;
     margin: 16px 0 8px 0;
   }
@@ -228,7 +248,7 @@
     align-items: center;
     justify-content: center;
     font-size: 13px;
-    color:#828282;
+    color: #828282;
   }
 }
 
@@ -279,7 +299,7 @@
   font-size: 13px;
   line-height: 1.4;
   font-weight: 600;
-  color:$gray;
+  color: $gray;
 }
 
 .user-review .review__text {
@@ -290,9 +310,11 @@
 
 .user-review__link {
   display: flex;
+
+  flex-wrap: wrap;
 }
 
-.like-wrap,.link-wrap {
+.like-wrap, .link-wrap {
   display: flex;
   align-items: center;
 }
@@ -304,7 +326,7 @@
 .like, .unlike {
   width: 14px;
   height: 14px;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 
@@ -323,15 +345,17 @@
 }
 
 .count--green {
-  color:$green;
+  color: $green;
 }
 
 .link-wrap {
   margin-left: 34px;
+ font-size: 13px;
+  font-weight: 600;
 }
 
 .link-wrap button {
-  color:#828282;
+  color: #828282;
   text-decoration: underline;
 }
 
@@ -347,8 +371,8 @@
 
 }
 
-.your-review__top{
-  color:$title-color;
+.your-review__top {
+  color: $title-color;
   font-size: 13px;
   line-height: 1.4;
   font-weight: 600;
@@ -381,7 +405,7 @@
     & p {
       font-size: 13px;
       line-height: 1.2;
-      color:#828282;
+      color: #828282;
     }
   }
 }
@@ -391,30 +415,57 @@
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 32px;
+
 }
 
-.gallery-areal .gallery__item {
+.gallery-areal__item {
   position: relative;
+
+  &:after {
+    bottom: 0;
+    position: absolute;
+    content: '';
+    background: #333333;
+    opacity: 0.7;
+    height: 50px;
+    //max-width: 255px;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 1;
+  }
 }
 
-.gallery-areal .overlay{
-  bottom: 0;
-  position: absolute;
-  background: #333333;
-  opacity: 0.7;
-  height: 50px;
-  max-width: 228px;
-  width: 100%;
-  border-radius: 8px;
-  z-index: 2;
-}
+//.gallery-areal .overlay{
+//  bottom: 0;
+//  position: absolute;
+//  background: #333333;
+//  opacity: 0.7;
+//  height: 50px;
+//  max-width: 228px;
+//  width: 100%;
+// border-bottom-left-radius: 8px;
+//  border-bottom-right-radius: 8px;
+//  z-index: 2;
+//}
 
-.overlay p{
+.overlay p {
   position: absolute;
-  top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  bottom: 14px;
   left: 14px;
-  color:white;
-  z-index: 3;
+  color: white;
+  opacity: 1;
+  z-index: 112;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 //end стили страницы учреждения

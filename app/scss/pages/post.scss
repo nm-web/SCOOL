@@ -1,12 +1,11 @@
 //Стили страницы поста
 
-
 .post__img {
-  //max-width: 730px;
   max-height: 355px;
 }
 
 .post__title {
+  font-weight: 700;
   margin: 24px 0 8px;
 }
 
@@ -29,13 +28,14 @@
 
 .post p {
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.7;
   color:$gray;
   font-weight: 400;
 }
 
 .post .review__form {
   margin-top: 16px;
+  margin-bottom: 56px;
   max-width: 100%;
 
   & textarea {

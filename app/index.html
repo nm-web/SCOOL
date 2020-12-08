@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
     <link rel="stylesheet" href="owlCarosel/owl.carousel.min.css">
     <!--    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
 
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="header">
             <a href="#" class="header__logo logo">
-                <img class="logo__img" src="images/content/logo.png" alt="">
+                <img class="logo__img" src="images/svg/logo.svg" alt="">
                 <div class="logo__text">Реальные отзывы <br/> о школах и детских садах</div>
             </a>
             <div class="header__region">
@@ -60,7 +60,7 @@
                 <div class="mobile-menu__line mobile-menu__line--bottom"></div>
             </div>
             <div class="header__check">
-                <img src="images/content/user.png" alt="">
+                <img src="images/svg/user.svg" alt="">
                 <button>Вход / Регистрация</button>
             </div>
             <button class="btn btn-review">Оставить отзыв</button>
@@ -71,10 +71,23 @@
 <section class="banner">
     <h1 class="banner__title">Школы и детские сады</h1>
     <form class="banner__search search">
-        <select name="city" id="city">
-            <option value="">Москва</option>
-            <option value="">Новгород</option>
-        </select>
+        <div class="banner-select">
+            <div class="banner-select__header">
+                <span class="select__current">Москва</span>
+            </div>
+            <div class="banner-select__body">
+                <div class="banner-select__item">
+                    Москва
+                </div>
+                <div class="banner-select__item">
+                    Питер
+                </div>
+            </div>
+        </div>
+        <!--        <select name="city" id="city">-->
+        <!--            <option value="">Москва</option>-->
+        <!--            <option value="">Новгород</option>-->
+        <!--        </select>-->
         <input type="search" placeholder="Поиск" name="s">
         <button class="btn btn-search">Найти</button>
     </form>
@@ -113,44 +126,44 @@
         <p class="scool__text">Ищите школу? Мы поможем вам! Нажмите на ссылку ниже, чтобы найти школы
             с самым высоким рейтингом, найти информацию о школе, найти отзывы родителей, и многое другое.</p>
 
-            <div class="scool__slider slider owl-carousel" id="carousel1">
-                <div class="slider__item  ">
-                    <img class="slider__img" src="images/content/moskow.jpg" alt="Москва">
-                    <div class="slider__text">
-                        <div class="slider__title">Москва</div>
-                        <a href="#" class="slider__link"></a>
-                    </div>
+        <div class="scool__slider slider owl-carousel" id="carousel1">
+            <div class="slider__item  ">
+                <img class="slider__img" src="images/content/moskow.jpg" alt="Москва">
+                <div class="slider__text">
+                    <div class="slider__title">Москва</div>
+                    <a href="#" class="slider__link"></a>
                 </div>
-                <div class="slider__item  ">
-                    <img class="slider__img" src="images/content/piter.jpg" alt="Санкт-Петербург">
-                    <div class="slider__text">
-                        <div class="slider__title">Cанкт-Петербург</div>
-                        <a href="#" class="slider__link"></a>
-                    </div>
+            </div>
+            <div class="slider__item  ">
+                <img class="slider__img" src="images/content/piter.jpg" alt="Санкт-Петербург">
+                <div class="slider__text">
+                    <div class="slider__title">Cанкт-Петербург</div>
+                    <a href="#" class="slider__link"></a>
                 </div>
-                <div class="slider__item  ">
-                    <img class="slider__img" src="images/content/novosibirsk.jpg" alt="Новосибирск">
-                    <div class="slider__text">
-                        <div class="slider__title">Новосибирск</div>
-                        <a href="#" class="slider__link"></a>
-                    </div>
+            </div>
+            <div class="slider__item  ">
+                <img class="slider__img" src="images/content/novosibirsk.jpg" alt="Новосибирск">
+                <div class="slider__text">
+                    <div class="slider__title">Новосибирск</div>
+                    <a href="#" class="slider__link"></a>
                 </div>
-                <div class="slider__item  ">
-                    <img class="slider__img" src="images/content/ekaterinburg.jpg" alt="Екатеринбург">
-                    <div class="slider__text">
-                        <div class="slider__title">Екатеринбург</div>
-                        <a href="#" class="slider__link"></a>
-                    </div>
+            </div>
+            <div class="slider__item  ">
+                <img class="slider__img" src="images/content/ekaterinburg.jpg" alt="Екатеринбург">
+                <div class="slider__text">
+                    <div class="slider__title">Екатеринбург</div>
+                    <a href="#" class="slider__link"></a>
                 </div>
-                <div class="slider__item  ">
-                    <img class="slider__img" src="images/content/novgorod.jpg" alt="Нижний Новгород">
-                    <div class="slider__text">
-                        <div class="slider__title">Нижний Новгород</div>
-                        <a href="#" class="slider__link"></a>
-                    </div>
+            </div>
+            <div class="slider__item  ">
+                <img class="slider__img" src="images/content/novgorod.jpg" alt="Нижний Новгород">
+                <div class="slider__text">
+                    <div class="slider__title">Нижний Новгород</div>
+                    <a href="#" class="slider__link"></a>
                 </div>
             </div>
         </div>
+    </div>
 
 </section>
 
@@ -167,11 +180,12 @@
                     </div>
                 </a>
             </article>
-            <div class="slider-blog " >
+            <div class="slider-blog ">
                 <div class="blog-container owl-carousel " id="carousel-blog">
                     <article class="blog__item">
+
+                        <img src="images/content/blog2.jpg" alt="Ученики">
                         <a href="#">
-                            <img src="images/content/blog2.jpg" alt="Ученики">
                             <div class="blog__text">
                                 <h3>Мобильные телефоны в школе</h3>
                                 <p>Запрет на сотовые телефоны в школах: все ли «за»?</p>
@@ -179,8 +193,9 @@
                         </a>
                     </article>
                     <article class="blog__item ">
+
+                        <img src="images/content/blog3.jpg" alt="Ученики">
                         <a href="#">
-                            <img src="images/content/blog3.jpg" alt="Ученики">
                             <div class="blog__text">
                                 <h3>Как подготовиться к ЕГЭ</h3>
                                 <p>Ночной кошмар выпускников или ЕГЭ экзамены: полезные советы по...</p>
@@ -188,8 +203,9 @@
                         </a>
                     </article>
                     <article class="blog__item ">
+
+                        <img src="images/content/blog4.jpg" alt="Ученики">
                         <a href="#">
-                            <img src="images/content/blog4.jpg" alt="Ученики">
                             <div class="blog__text">
                                 <h3>Подготовка к поступлению</h3>
                                 <p>С наступлением весны ученики 11-ых классов начинают думать не только...</p>
@@ -197,8 +213,9 @@
                         </a>
                     </article>
                     <article class="blog__item ">
+
+                        <img src="images/content/blog5.jpg" alt="Ученики">
                         <a href="#">
-                            <img src="images/content/blog5.jpg" alt="Ученики">
                             <div class="blog__text">
                                 <h3>Школьник и социальные сети</h3>
                                 <p>Нам уже кажется нормой, что большинство детей школьного возраста...</p>
