@@ -19,11 +19,6 @@ $(document).ready(function () {
     form.classList.toggle('active');
     input.focus();
   });
-  // document.querySelectorAll('.selections-box .select-body').forEach(function (el) {
-  //   el.addEventListener('click', function (e) {
-  //     e.preventDefault();
-  //   });
-  // });
 
   var selectEls = document.querySelectorAll('.selections-box > .select');
   var selectItemInstit = document.querySelectorAll('.select__item');
@@ -98,26 +93,6 @@ $(document).ready(function () {
     }
 
 
-
-
-  // let select = () => {
-  //   let selectCurrent = document.querySelectorAll('.select__header'),
-  //     selectItem = document.querySelectorAll('.select__item');
-  //   selectCurrent.forEach((item) => {
-  //     item.addEventListener('click', (e) => {
-  //       e.currentTarget.parentElement.classList.toggle('is-open');
-  //     })
-  //   });
-  //   selectItem.forEach((item) => {
-  //     item.addEventListener('click', (e) => {
-  //       e.currentTarget.closest('.select').querySelector('.select__current').innerHTML = e.currentTarget.innerHTML;
-  //       e.currentTarget.closest('.select').classList.remove('is-open');
-  //     })
-  //   });
-  // };
-
-  // select();
-
   function moveTitle() {
     let title = document.querySelector('.project__title');
     if (!title) {
@@ -146,7 +121,7 @@ $(document).ready(function () {
           0: {
             items: 1,
             margin: 24,
-            stagePadding: 40,
+            stagePadding: 34,
 
           },
           440: {
@@ -230,7 +205,7 @@ $(document).ready(function () {
       0: {
         items: 1,
         margin: 24,
-        stagePadding: 48
+        stagePadding: 60
       },
       440: {
         items: 2,
