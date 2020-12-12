@@ -1,5 +1,6 @@
 
 .gallery-page__wrap {
+  width: 100%;
   margin-top: 110px;
   margin-bottom: 157px;
   display: flex;
@@ -100,7 +101,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 732px;
-
+  margin-bottom: 96px;
 
   & img {
     max-width: 228px;

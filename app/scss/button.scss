@@ -7,8 +7,8 @@
 }
 
 .btn-icon-search {
-  width: 15px;
-  height: 15px;
+  width: 100%;
+  height: auto;
   border:none;
   background: transparent;
   cursor: pointer;
@@ -120,7 +120,7 @@
   height: 42px;
   line-height: 42px;
   position: absolute;
-  z-index: 100;
+  z-index: 8;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);

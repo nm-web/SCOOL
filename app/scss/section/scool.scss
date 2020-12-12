@@ -58,6 +58,25 @@
   align-items: center;
   justify-content: space-between;
 
+  & a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & a:hover {
+    & .slider__title {
+      font-weight: 600;
+    }
+    & .slider__link{
+      background-color:  $blue;
+      background-image: url('../images/svg/arrow-white.svg');
+
+    }
+
+  }
+
 }
 
 .slider__link {
@@ -73,8 +92,3 @@
   transition: all 0.5s ease;
 }
 
-.slider__link:hover{
-  background-color:  $blue;
-  background-image: url('../images/svg/arrow-white.svg');
-
-}

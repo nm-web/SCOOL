@@ -13,6 +13,14 @@
       height: 482px;
     }
   }
+  & .selections-box {
+    justify-content: start;
+  }
+
+  & .selections-box .select:last-child {
+    width: 275px;
+    flex-grow: 0;
+  }
 }
 
 .map__popup {
@@ -75,5 +83,9 @@
     left: 5px;
     bottom: 5px;
     max-width: 290px;
+  }
+
+  .map .selections-box .select:last-child {
+    flex-grow: 1;
   }
 }

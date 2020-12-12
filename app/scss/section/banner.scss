@@ -1,5 +1,6 @@
 .banner {
   background:url("../images/content/banner.jpg") no-repeat;
+  background-size: cover;
   background-position: top left;
   //min-height: 562px;
   display: flex;
@@ -20,6 +21,7 @@
 .banner__search {
   margin-top: 30px;
   padding: 0 10px 252px;
+  margin-bottom: 70px;
 
 }
 
@@ -50,7 +52,7 @@
     color:#BDBDBD;
   }
 
-  & .banner-select {
+  & .select.banner-select {
     position: relative;
     display: flex;
     align-items: center;
@@ -58,7 +60,7 @@
     border-radius: 4px;
     width: 201px;
     margin-top: 10px;
-    padding-left: 48px;
+    padding: 0 0 0 48px;
     height: 38px;
     color:$gray;
     background-image: url('../images/svg/local.svg') ;

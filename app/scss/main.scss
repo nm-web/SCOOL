@@ -268,16 +268,17 @@ button {
 }
 
 @media screen and (max-width: 648px) {
- .form-header {
-  right: 0;
-  left:100%;
-  transform: translateX(-70%);
- }
+
 
  .banner__search .banner-select,
  .banner__search input,
  .banner__search button {
   width: 290px;
+  max-width: 290px;
+ }
+
+ .selections-box .select.banner-select {
+  margin-bottom: 0;
  }
 
  .banner__title {
@@ -306,19 +307,21 @@ button {
  }
 
  .review__content-item{
- justify-content: center;
-
+ //justify-content: center;
+  padding: 24px 0 26px;
  & .user {
   flex-direction: row;
 
  } }
 
  .review__form {
-  justify-content: center;
+  //justify-content: center;
   & textarea,
   & .wrap-button {
+   margin-left: 0;
    padding-top: 8px;
    max-width: 100%;
+   width: 290px;
    & button {
     margin-top: 24px;
    }
@@ -326,12 +329,17 @@ button {
  }
 
  .your-review__top {
-  text-align: center;
+  margin-top: 16px;
  }
 
- .user-review .rating {
-  justify-content: center;
+ .sidebar {
+  margin-top: 32px;
  }
+
+
+ //.user-review .rating {
+ // justify-content: center;
+ //}
  .user-date__item {
   .selection__item {
    flex-wrap: wrap;
@@ -349,7 +357,9 @@ button {
 
  .banner {
   background-position: top center;
+  position: static;
  }
+
  .banner__search {
 
   padding: 0 0 124px;
@@ -359,6 +369,9 @@ button {
 }
 
 @media screen and (max-width: 440px) {
+ .header__search {
+  margin: 0 auto;
+ }
 
 
 
@@ -375,12 +388,15 @@ button {
  }
 
  #carousel-blog .owl-stage-outer {
-  padding-left: 96px;
+  padding-left: 87px;
   padding-bottom: 0;
   margin-left: -20px;
   margin-right: -15px;
  }
 
+ .btn-post {
+  margin-top: 0;
+ }
 
  #carousel-review .owl-stage,
  #carousel1 .owl-stage,
@@ -392,7 +408,7 @@ button {
  }
 
  .scool {
-  padding: 48px 0;
+  padding: 48px 0 8px;
  }
 
  .link-wrap {
@@ -402,6 +418,11 @@ button {
  .banner__title {
   font-size: 36px;
  }
+
+ .institution__review {
+  margin-top: 56px;
+ }
+
 
  .title,.modal-enter__title {
   font-size: 24px;}
@@ -455,7 +476,13 @@ button {
 
 .select{
  flex-grow: 1;
+ width: 100%;
 }
+
+ .selections-box .select:nth-child(2){
+  margin-right: 0;
+  margin-left:0;
+ }
 
  .selection__item {
   margin-bottom: 24px;
@@ -463,6 +490,10 @@ button {
 
  .user {
   flex-direction: row;
+  margin-bottom: 0;
+  &__comment {
+   justify-content: flex-start;
+  }
   //flex-wrap: wrap;
  }
  .breadcrumbs {
@@ -520,5 +551,11 @@ button {
   margin: 32px auto 0;
   max-width: 243px;
 
+ }
+}
+
+@media screen and (max-width: 320px) {
+ #carousel-blog .owl-stage-outer {
+  padding-left: 106px;
  }
 }

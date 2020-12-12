@@ -5,8 +5,27 @@
   background: #fff;
   box-shadow: 0 15px 20px rgba(126, 126, 126, 0.1);
   border-radius: 8px;
+  position: absolute;
+  top: 70px;
+  display: none;
+  z-index: 50;
+}
+
+.wrapper .modal-enter,
+.user-wrap .modal-enter,
+.map .modal-enter{
+  margin: 70px auto 0;
+  width: 100%;
+  //position: static;
+}
+
+.modal-enter.active {
+  display: block;
+
 
 }
+
+
 
 .modal-wrap {
   width: 100%;
@@ -24,6 +43,7 @@
     height: 48px;
     right: -24px;
     top: -24px;
+
     & img {
       width: 32px;
       height: 32px;
@@ -34,13 +54,13 @@
 .modal-enter__title {
   font-size: 48px;
   font-weight: 700;
-  color:$title-color;
+  color: $title-color;
 }
 
 .modal-enter__text {
   font-size: 15px;
   font-weight: 600;
-  color:$title-color;
+  color: $title-color;
   margin-top: 8px;
   max-width: 415px;
   text-align: center;
@@ -60,48 +80,57 @@
   flex-direction: column;
   padding: 0 30px;
   flex-grow: 1;
-    .btn-social {
-    margin:8px 0;
+
+  .btn-social {
+    margin: 8px 0;
   }
-  .btn-class{
-    background: url('../images/svg/class-white.svg') no-repeat center,#ED812B ;
+
+  .btn-class {
+    background: url('../images/svg/class-white.svg') no-repeat center, #ED812B;
   }
+
   .btn-class:hover {
     background: url('../images/svg/class-orange.svg') no-repeat center;
   }
 
   .btn-vk {
     background-color: #2787F5;
+
     & .vk-icon {
       background-color: #4199FF;
     }
+
     & svg path {
-      fill:white;
+      fill: white;
     }
   }
-  .btn-vk:hover{
+
+  .btn-vk:hover {
     background-color: #ffffff;
 
     & .icon-text path {
-      fill:#2787F5;
+      fill: #2787F5;
     }
   }
 
   .btn-facebook {
     background: #2787F5;
-    & svg path{
-      fill:white;
+
+    & svg path {
+      fill: white;
     }
   }
 
   .btn-facebook:hover {
     background: #ffffff;
-    & svg path{
-      fill:#1877F2;
+
+    & svg path {
+      fill: #1877F2;
     }
   }
 
 }
+
 .modal-enter__form {
   display: flex;
   flex-direction: column;
@@ -110,9 +139,10 @@
   & p {
     margin-top: 8px;
     font-size: 13px;
-    color:$gray;
+    color: $gray;
     font-weight: 600;
   }
+
   & input {
     height: 36px;
     background: #FFFFFF;
@@ -145,76 +175,97 @@
   }
   .modal-enter__buttons {
     align-items: center;
-    order:2;
+    order: 2;
     flex-grow: 2;
+
     & .btn-social {
       width: 290px;
     }
+
     & .btn-vk {
       justify-content: center;
     }
   }
 }
 
-@media screen and (max-width: 440px) {
-
-  .modal-enter__text {
-    font-size: 13px;
-  }
-
-  .modal-enter__form {
-    max-width: 290px;
-  }
-  .modal-enter__buttons {
-    padding: 0;
-  }
-}
-
-.modal-region {
-  margin-top: 16px;
-  max-width: 224px;
-  padding: 12px 10px 22px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 15px 20px rgba(126, 126, 126, 0.1);
-  position: relative;
-  text-align: center;
-  &:before {
+@media screen and (max-width: 648px) {
+  .wrapper .modal-enter,
+  .user-wrap .modal-enter,
+  .gallery-page__wrap .modal-enter,
+  .map .modal-enter,
+  .modal-enter {
     position: absolute;
-    content: '';
-    width: 26px;
-    height: 14px;
-    top: -26px;
-    left: 31px;
-    border: 14px solid transparent;
-    border-bottom: 14px solid white;
-    z-index: 0;
-  }
-
-  &__text {
-    font-size: 15px;
-    line-height: 1.5;
-    color:#BDBDBD;
-  }
-
-  &__title{
-    font-size: 17px;
-    color:$title-color;
-    font-weight: 600;
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-    & .btn {
-      width: 49px;
-      height: 32px;
-    }
-
-    & .btn:first-child {
-      margin-right: 8px;
-    }
+    margin-top: 0;
+    top: 0;
+    left: 0;
   }
 }
+
+  @media screen and (max-width: 440px) {
+
+    .modal-enter__text {
+      font-size: 13px;
+    }
+
+    .modal-enter__form {
+      max-width: 290px;
+    }
+    .modal-enter__buttons {
+      padding: 0;
+    }
+  }
+
+  .modal-region {
+    display: none;
+    top: 77px;
+    margin-top: 16px;
+    max-width: 224px;
+    padding: 12px 56px 22px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(126, 126, 126, 0.1);
+    position: absolute;
+    text-align: center;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 26px;
+      height: 14px;
+      top: -26px;
+      left: 31px;
+      border: 14px solid transparent;
+      border-bottom: 14px solid white;
+      z-index: 0;
+    }
+
+
+    &__text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #BDBDBD;
+    }
+
+    &__title {
+      font-size: 17px;
+      color: $title-color;
+      font-weight: 600;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+
+      & .btn {
+        width: 49px;
+        height: 32px;
+      }
+
+      & .btn:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+
 //end стили модальных окон

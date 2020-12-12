@@ -264,22 +264,22 @@
   background: url("../images/svg/comment.svg") no-repeat;
   width: 15px;
   height: 13px;
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .icon-link {
-  width: 13px;
+  width: 14px;
   height: 14px;
   background: url("../images/svg/link.svg") no-repeat center;
   background-size: cover;
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .user-review {
   flex-grow: 1;
   max-width: 506px;
-  margin-left: 10px;
-  padding-left: 10px;
+  //margin-left: 10px;
+  //padding-left: 10px;
 }
 
 .user-review__top {
@@ -341,7 +341,7 @@
 .count {
   font-size: 13px;
   line-height: 1.4;
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .count--green {
@@ -428,7 +428,7 @@
     background: #333333;
     opacity: 0.7;
     height: 50px;
-    //max-width: 255px;
+    max-width: 255px;
     width: 100%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -436,18 +436,6 @@
   }
 }
 
-//.gallery-areal .overlay{
-//  bottom: 0;
-//  position: absolute;
-//  background: #333333;
-//  opacity: 0.7;
-//  height: 50px;
-//  max-width: 228px;
-//  width: 100%;
-// border-bottom-left-radius: 8px;
-//  border-bottom-right-radius: 8px;
-//  z-index: 2;
-//}
 
 .overlay p {
   position: absolute;

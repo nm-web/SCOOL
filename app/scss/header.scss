@@ -18,6 +18,7 @@ header{
   font-weight: 600;
   color:#4F4F4F;
   background: #ffffff;
+  position: relative;
 
 }
 
@@ -33,21 +34,27 @@ header{
   & svg{
     margin-right: 10px;
   }
+
+    &.active {
+      color:$blue;
+      & svg path{
+        fill:$blue;
+      }
+      & .modal-region {
+        display: block;
+      }
+    }
 }
 
 .header__search {
   display: flex;
-  position: relative;
+  align-items: center;
+  margin: 0;
+  //position: relative;
 }
 
 .form-header {
-  position: absolute;
-  top: calc(100% + 20px);
-  right: 40px;
-  opacity: 0;
-  //width: 1px;
-  height: 0;
-  visibility: hidden;
+  display: none!important;
   transition: opacity 0.8s ease-in;
 
   & input {
@@ -56,15 +63,16 @@ header{
 }
 
 .form-header.active {
-
-  opacity: 1;
-  width: 320px;
-  visibility: visible;
-
+  display: block!important;
+  & .input-header {
+    margin: 0;
+    max-width: 365px;;
+  }
 
 }
 
 .header__check {
+  cursor: pointer;
   display: flex;
   color:#828282;
   & img {
@@ -76,6 +84,14 @@ header{
   & button {
     cursor: pointer;
   }
+}
+
+.header__check.hidden,
+.btn-review.hidden,
+.btn-icon-search.hidden,
+.mobile-menu.hidden,
+.header__logo.hidden,{
+  display: none!important;
 }
 
 
