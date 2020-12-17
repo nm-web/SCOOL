@@ -79,30 +79,6 @@ $(document).ready(function () {
   region.addEventListener('click', function (e) {
     this.classList.toggle('active');
   });
-  // var selectBanner = document.querySelectorAll('.banner-select');
-  // var selectItem = document.querySelectorAll('.banner-select__item');
-  // selectBanner.forEach(function (el) {
-  //
-  //   el.addEventListener('click', function (event) {
-  //     if (event.target) {
-  //
-  //     }
-  //     el.classList.toggle('active');
-  //     selectEls.forEach(function (sel) {
-  //       if (sel !== el) {
-  //         sel.classList.remove('active');
-  //       }
-  //     });
-  //   });
-  // });
-  //
-  // selectItem.forEach((item) => {
-  //   item.addEventListener('click', (e) => {
-  //     e.currentTarget.closest('.banner-select').querySelector('.select__current').innerHTML = e.currentTarget.innerHTML;
-  //     e.currentTarget.closest('.banner-select__body').classList.remove('active');
-  //   })
-  // });
-
 
   var tab = document.querySelectorAll('.tabs-title');
   var tabContent = document.querySelectorAll('.tab-content');
